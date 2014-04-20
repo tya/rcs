@@ -1,0 +1,10 @@
+"Tab settings
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set softtabstop=2
+set expandtab
+set smarttab
+
+" todo
+let g:todo_taskurl = "$ticket/%s"

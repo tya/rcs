@@ -1,0 +1,33 @@
+# vim: set ft=gitconfig:
+[include]
+    path = ~/gitconfig.local
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+
+
+[core]
+    pager = less -S
+    ;excludesfile =
+    ; autocrlf = true
+    filemode = false
+    editor = vim -f
+
+
+[merge]
+    tool = meld
+
+[alias]
+    type = cat-file -t
+
+    dump = cat-file -p
+    ctags = !.git/hooks/ctags
+
+
+[init]
+	templatedir = ~/.git_template

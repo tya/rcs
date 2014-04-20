@@ -1,0 +1,10 @@
+let $CONFIGHOME = $HOME."/configs/vim"
+let $VIMHOME = $HOME."/.vim"
+let $VIMLOCAL = $HOME."/vimrc.local"
+source $CONFIGHOME/winvundle.vim
+source $CONFIGHOME/winglobal.vim
+source $CONFIGHOME/winplugins.vim
+if filereadable($VIMLOCAL)
+    source $VIMLOCAL
+endif
+

@@ -1,0 +1,11 @@
+# vim: set ft=gitconfig:
+[user]
+    name = emanlluf
+    email = emanlluf@emanlluf.com
+
+
+[diff]
+    ;external = /path/to/gitdiff
+
+
+

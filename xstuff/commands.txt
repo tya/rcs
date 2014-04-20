@@ -1,0 +1,19 @@
+pacman -Sc
+clean all cached packages that are NOT installed on your system.
+
+pacman -Rs $(pacman -Qtdq)
+for recursively removing orphans:
+
+reflector -l 5 --sort rate --save /etc/pacman.d/mirrorlist
+
+lspci -v
+dmesg | grep module
+modprobe module
+ip link
+ip link set net0 up
+dhcpcd net0
+
+xmonad --recompile
+xmonad --restart
+
+
