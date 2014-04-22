@@ -8,10 +8,10 @@ set modelines=1
 "make things display better
 set encoding=utf-8
 if !&scrolloff
-  set scrolloff=1
+    set scrolloff=1
 endif
 if !&sidescrolloff
-  set sidescrolloff=5
+    set sidescrolloff=5
 endif
 set scrolloff=3
 set showmode
@@ -96,10 +96,10 @@ endif
 "show hidden characters
 set list
 if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-  if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
-    let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
-  endif
+    set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+    if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
+        let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
+    endif
 endif
 
 set iskeyword+=_,$,@,%,#
@@ -161,21 +161,21 @@ set background=dark
 "set background=light
 colorscheme solarized
 if has('gui_running')
-  set guioptions-=m
-  set guioptions-=T
-  set guioptions-=l
-  set guioptions-=L
-  set guioptions-=r
-  set guioptions-=R
-  set guioptions-=b
-  set guioptions-=B
-  set guifont=Inconsolata-g\ 11
+    set guioptions-=m
+    set guioptions-=T
+    set guioptions-=l
+    set guioptions-=L
+    set guioptions-=r
+    set guioptions-=R
+    set guioptions-=b
+    set guioptions-=B
+    set guifont=Inconsolata-g\ 11
 else
-  set t_Co=256
-  let g:solarized_termtrans=1
-  let g:solarized_contrast="normal"
-  let g:solarized_visibility="normal"
-  let g:solarized_termcolors=256
+    set t_Co=256
+    let g:solarized_termtrans=1
+    let g:solarized_contrast="normal"
+    let g:solarized_visibility="normal"
+    let g:solarized_termcolors=256
 endif
 
 "Resize splits when the window is resized
@@ -234,23 +234,23 @@ set timeout timeoutlen=1000 ttimeoutlen=50
 set undolevels=1000
 
 if &history < 1000
-  set history=1000
+    set history=1000
 endif
 if &tabpagemax < 50
-  set tabpagemax=50
+    set tabpagemax=50
 endif
 if !empty(&viminfo)
-  set viminfo^=!
+    set viminfo^=!
 endif
 
 " Allow color schemes to do bright colors without forcing bold.
 if &t_Co == 8 && $TERM !~# '^linux'
-  set t_Co=16
+    set t_Co=16
 endif
 
 " Load matchit.vim, but only if the user hasn't installed a newer version.
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-  runtime! macros/matchit.vim
+    runtime! macros/matchit.vim
 endif
 
 inoremap <C-U> <C-G>u<C-U>

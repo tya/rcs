@@ -33,19 +33,19 @@ Bundle 'seebi/dircolors-solarized'
 "Bundle 'seebi/tmux-colors-solarized'
 
 if has('python') || has('python3')
-  Bundle 'Valloric/YouCompleteMe'
+    Bundle 'Valloric/YouCompleteMe'
 endif
 
 if executable('git')
-  Bundle 'tpope/vim-fugitive'
+    Bundle 'tpope/vim-fugitive'
 endif
 
 if executable('ctags')
-  Bundle 'majutsushi/tagbar'
+    Bundle 'majutsushi/tagbar'
 endif
 
 if executable('ag')
- Bundle 'dyng/ctrlsf.vim'
+    Bundle 'dyng/ctrlsf.vim'
 endif
 
 
