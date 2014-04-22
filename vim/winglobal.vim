@@ -5,14 +5,6 @@ set ofu=syntaxcomplete#Complete
 set nocompatible
 set modelines=1
 
-"Tab settings
-"set tabstop=2
-"set shiftwidth=2
-"set shiftround
-"set softtabstop=2
-"set expandtab
-"set smarttab
-
 "make things display better
 set encoding=utf-8
 if !&scrolloff
