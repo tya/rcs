@@ -18,7 +18,6 @@ Bundle 'gregsexton/gitv'
 Bundle 'tpope/vim-vinegar'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'Raimondi/delimitMate'
-Bundle 'justinmk/vim-sneak'
 Bundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on
