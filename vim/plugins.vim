@@ -18,7 +18,6 @@ if executable('ag')
     nnoremap <Leader>ff :CtrlSF<Space>
 endif
 
-
 "syntastic
 nnoremap <F8> :SyntasticCheck<CR>:Errors<CR>:lclose<CR>
 nnoremap <F7> :SyntasticReset<CR>

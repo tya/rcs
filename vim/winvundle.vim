@@ -7,18 +7,28 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles here:
-Bundle 'mivok/vimtodo'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-fugitive'
-Bundle 'gregsexton/gitv'
-Bundle 'tpope/vim-vinegar'
-Bundle 'tpope/vim-unimpaired'
 Bundle 'Raimondi/delimitMate'
+Bundle 'bling/vim-airline'
+Bundle 'dag/vim2hs'
+Bundle 'gregsexton/gitv'
+Bundle 'junegunn/vim-easy-align'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/emmet-vim'
+Bundle 'mivok/vimtodo'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'pangloss/vim-javascript'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-vinegar'
+Bundle 'vim-scripts/LargeFile'
+
+Bundle 'altercation/vim-colors-solarized'
+
+if executable('git')
+    Bundle 'tpope/vim-fugitive'
+endif
 
 filetype plugin indent on
 

@@ -236,8 +236,6 @@ if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
 endif
 
 inoremap <C-U> <C-G>u<C-U>
-nnoremap <F8> :SyntasticCheck<CR>:Errors<CR>:lclose<CR>
-nnoremap <F7> :SyntasticReset<CR>
 
 " repeat visual command on a selection
 vnoremap . :normal .<CR>

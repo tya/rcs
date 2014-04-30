@@ -26,7 +26,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
 Bundle 'vim-scripts/LargeFile'
 
-Bundle 'solarized/vim-colors-solarized'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'seebi/dircolors-solarized'
 "Bundle 'sigurdga/gnome-terminal-colors-solarized'
 "Bundle 'solarized/xresources'
