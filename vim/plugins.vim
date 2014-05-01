@@ -75,12 +75,6 @@ let g:ctrlp_user_command = {
             \ 'fallback': 'ag %s -l --nocolor --hidden -g ""'
             \ }
 
-if has('python') || has('python3')
-    "youcompleteme
-    let g:ycm_register_as_syntastic_checker = 0
-    let g:ycm_autoclose_preview_window_after_completion = 1
-endif
-
 if executable('ctags')
     "Tagbar
     nnoremap <Leader>t :TagbarToggle<CR>

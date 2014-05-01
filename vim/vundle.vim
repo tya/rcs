@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 " Bundles here:
 Bundle 'Raimondi/delimitMate'
 Bundle 'bling/vim-airline'
+Bundle 'ervandew/supertab'
 Bundle 'dag/vim2hs'
 Bundle 'derekwyatt/vim-fswitch'
 Bundle 'gregsexton/gitv'
@@ -32,9 +33,8 @@ Bundle 'seebi/dircolors-solarized'
 "Bundle 'solarized/xresources'
 "Bundle 'seebi/tmux-colors-solarized'
 
-if has('python') || has('python3')
-    Bundle 'Valloric/YouCompleteMe'
-endif
+"if has('python') || has('python3')
+"endif
 
 if executable('git')
     Bundle 'tpope/vim-fugitive'
