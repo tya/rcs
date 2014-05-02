@@ -8,6 +8,8 @@ Bundle 'gmarik/vundle'
 
 " Bundles here:
 Bundle 'Raimondi/delimitMate'
+Bundle 'Yggdroot/indentLine'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 Bundle 'dag/vim2hs'
 Bundle 'ervandew/supertab'
@@ -16,7 +18,6 @@ Bundle 'junegunn/vim-easy-align'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'mivok/vimtodo'
-Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-repeat'
@@ -25,7 +26,6 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
 Bundle 'vim-scripts/LargeFile'
 
-Bundle 'altercation/vim-colors-solarized'
 
 if executable('git')
     Bundle 'tpope/vim-fugitive'
