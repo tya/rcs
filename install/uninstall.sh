@@ -11,8 +11,3 @@ rm ~/.fonts
 rm ~/.dir_colors
 rm ~/.vimrc
 rm -rf ~/vim
-
-rm ~/.xinitrc
-rm ~/.Xresources
-rm ~/.xmobarrc
-rm -rf ~/.xmonad

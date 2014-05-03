@@ -1,5 +1,5 @@
 #! /bin/bash
-CFG=/home/share/configs
+CFG=~/configs
 rm -rf ~/vim
 mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
@@ -19,10 +19,3 @@ rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
 ln -sf ~/vim/bundle/dircolors-solarized/dircolors.256dark ~/.dir_colors
 ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
-
-ln -sf $CFG/xstuff/xinitrc ~/.xinitrc
-ln -sf $CFG/xstuff/Xresources ~/.Xresources
-ln -sf $CFG/xstuff/xmobarrc ~/.xmobarrc
-rm -rf ~/.xmonad
-mkdir -p ~/.xmonad
-ln -sf $CFG/xstuff/xmonad.hs ~/.xmonad/xmonad.hs
