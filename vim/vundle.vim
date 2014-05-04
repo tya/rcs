@@ -28,10 +28,9 @@ Bundle 'tpope/vim-vinegar'
 Bundle 'vim-scripts/LargeFile'
 
 Bundle 'altercation/vim-colors-solarized'
-"Bundle 'seebi/dircolors-solarized'
-"Bundle 'sigurdga/gnome-terminal-colors-solarized'
-"Bundle 'solarized/xresources'
-"Bundle 'seebi/tmux-colors-solarized'
+Bundle 'seebi/dircolors-solarized'
+Bundle 'solarized/xresources'
+Bundle 'seebi/tmux-colors-solarized'
 
 "if has('python') || has('python3')
 "endif

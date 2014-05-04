@@ -10,4 +10,5 @@ rm ~/.vimperatorrc
 rm ~/.fonts
 rm ~/.dir_colors
 rm ~/.vimrc
+rm ~/.Xresources
 rm -rf ~/vim

@@ -1,5 +1,5 @@
 #! /bin/bash
-CFG=~/configs
+CFG=~/rcs
 rm -rf ~/vim
 mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
@@ -9,7 +9,7 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim "+BundleInstall" "+quitall"
 
 ln -sf $CFG/configs/bashrc ~/.bashrc
-cp $CFG/configs/bashr.local ~/bashrc.local
+cp $CFG/configs/bashrc.local ~/bashrc.local
 ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
 ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
 ln -sf $CFG/configs/gitconfig ~/.gitconfig
@@ -19,3 +19,8 @@ rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
 ln -sf ~/vim/bundle/dircolors-solarized/dircolors.256dark ~/.dir_colors
 ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
+ln -sf $CFG/configs/Xresources ~/.Xresources
+
+mkdir -p ~/projects/todo
+mkdir -p ~/sandbox
+source ~/.bashrc
