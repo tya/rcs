@@ -1,5 +1,7 @@
 ! scrollbar style - rxvt (default), plain (most compact), next, or xterm
-URxvt*scrollstyle: plain
+!URxvt*scrollstyle: plain
+
+URxvt.scrollBar:false
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
@@ -11,7 +13,7 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
 ! scrollbar position
-URxvt*scrollBar_right: true
+!URxvt*scrollBar_right: true
 
 !font
 URxvt*font: xft:Inconsolata\\-g:medium:size=12:antialias=true:hinting=true
