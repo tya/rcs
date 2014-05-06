@@ -18,7 +18,7 @@ function lt() { ls -ltrsa "$@" | tail; }
 function psgrep() { ps axuf | grep -v grep | grep "$a" -i --color=auto; }
 function fname() { find . -iname "*$@*"; }
 
-export TERM=xterm-256color
+export TERM=rxvt-256color
 export EDITOR=vim
 export LESS=-RFX
 export HISTTIMEFORMAT="%d/%m/%y %T "

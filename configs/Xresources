@@ -1,3 +1,14 @@
+!font
+Xft*dpi: 96
+Xft*antialias: true
+Xft*rbga: rgb
+Xft*hinting: true
+Xft*hintstyle: hintslight
+URxvt*font: xft:Inconsolata\\-g:medium:size=12:antialias=true:hinting=true
+
+URxvt*transparent: false
+URxvt*fading: 0
+
 ! scrollbar style - rxvt (default), plain (most compact), next, or xterm
 !URxvt*scrollstyle: plain
 
@@ -14,9 +25,6 @@ URxvt*scrollTtyKeypress: true
 
 ! scrollbar position
 !URxvt*scrollBar_right: true
-
-!font
-URxvt*font: xft:Inconsolata\\-g:medium:size=12:antialias=true:hinting=true
 
 ! Solarized color scheme for the X Window System
 !
