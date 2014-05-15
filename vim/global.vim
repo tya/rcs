@@ -203,8 +203,8 @@ map Y y$
 autocmd BufRead,BufWritePre,FileWritePre * silent! %s/[\r \t]\+$//
 
 "automatically close preview window
-" autocmd CursorMovedI * if pumvisible() == 0|silent! pclose|endif
-" autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
+ autocmd CursorMovedI * if pumvisible() == 0|silent! pclose|endif
+ autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
 nnoremap <leader>w :silent !xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR><CR>
 
