@@ -10,9 +10,7 @@ bind '"\e[B": history-search-forward'
 
 alias lsa='ls -alh --color=auto'
 alias grep='grep --color=auto'
-alias rtex='rm *.ps ; rm *.dvi ; rm *.log ; rm *.aux ; rm *.tex~ && rm *.bak ; rm *.toc ; rm *.lot ; rm *.out'
 
-function ltex { pdflatex $1 && rtex; }
 function ignore { $1 $2 &>/dev/null & }
 function lt() { ls -ltrsa "$@" | tail; }
 function psgrep() { ps axuf | grep -v grep | grep "$a" -i --color=auto; }

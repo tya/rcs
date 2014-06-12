@@ -30,4 +30,4 @@
 
 
 [init]
-	templatedir = ~/.git_template
+    templatedir = ~/.git_template
