@@ -5,6 +5,3 @@ set shiftround
 set softtabstop=4
 set expandtab
 set smarttab
-
-" todo
-let g:todo_taskurl = "$ticket/%s"

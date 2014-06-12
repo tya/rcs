@@ -17,13 +17,11 @@ Bundle 'jeetsukumaran/vim-filebeagle'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
-Bundle 'mivok/vimtodo'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-scripts/LargeFile'
 
 if executable('git')
     Bundle 'tpope/vim-fugitive'

@@ -37,29 +37,8 @@ let g:airline_theme = 'solarized'
 "easy align
 vnoremap <silent> <Enter> :EasyAlign<cr>
 
-"FSwitch
-nmap <Leader>a :FSHere<CR>
-
 "delmimitMate
 imap <C-f> <Plug>delimitMateJumpMany
-
-"Large file
-let g:LargeFile = 11
-
-"todo
-let g:todo_states = [['TODO(t)', '|', 'DONE(d)', 'CANCELLED(c)'],
-            \['WAITING(w)', 'HOLD(h)', 'INPROGRESS(i)', 'SOMEDAY(s)', 'CLOSED(l)']]
-let g:todo_state_colors = {
-            \'DONE': 'Green',
-            \'CLOSED': 'Grey',
-            \'CANCELLED': 'Red',
-            \'TODO': 'Blue',
-            \'WAITING': 'Yellow',
-            \'HOLD': 'Grey',
-            \'INPROGRESS': 'Cyan',
-            \'SOMEDAY': 'Grey'
-            \}
-let g:todo_browser = "firefox"
 
 "Ctrlp
 let g:ctrlp_switch_buffer = 'et'
