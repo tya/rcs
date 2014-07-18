@@ -1,0 +1,12 @@
+set noautofocus
+
+unmap d
+unmap u
+unmap x
+unmap X
+
+map <C-u> scrollPageUp
+map <C-d> scrollPageDown
+map d quit
+map u lastClosedTab
+
