@@ -26,11 +26,6 @@ export PS1='[\j] \u@\h:\w\n\$ '
 complete -cf sudo
 complete -cf man
 
-if [ -f ~/.dir_colors ];
-then
-    eval `dircolors ~/.dir_colors`
-fi
-
 if [ -f ~/bashrc.local ];
 then
     source ~/bashrc.local
@@ -38,3 +33,10 @@ fi
 
 shopt -s cdspell
 bind 'set completion-ignore-case on'
+
+if [ -f ~/.dir_colors ];
+then
+    eval `dircolors ~/.dir_colors`
+fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
