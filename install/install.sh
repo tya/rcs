@@ -10,6 +10,7 @@ vim "+BundleInstall" "+quitall"
 cp $CFG/vim/vimrc.local ~/vimrc.local
 
 ln -sf $CFG/configs/bashrc ~/.bashrc
+ln -sf $CFG/configs/bash_profile ~/.bash_profile
 cp $CFG/configs/bashrc.local ~/bashrc.local
 ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
 ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
