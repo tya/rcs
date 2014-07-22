@@ -1,4 +1,10 @@
 #! /bin/bash
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    platform='linux'
+fi
+
 CFG=~/rcs
 rm -rf ~/vim
 mkdir -p ~/vim
@@ -20,8 +26,15 @@ ln -sf $CFG/git_template ~/.git_template
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
 ln -sf ~/vim/bundle/dircolors-solarized/dircolors.256dark ~/.dir_colors
-ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
 ln -sf $CFG/configs/Xresources ~/.Xresources
+
+if [[ $platform == 'linux' ]]; then
+    ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
+else
+    ln -sf $CFG/configs/mac_tmux.conf ~/.tmux.conf
+fi
+
+ln -sf $CFG/configs/slate ~/.slate
 
 mkdir -p ~/projects/todo
 mkdir -p ~/sandbox
