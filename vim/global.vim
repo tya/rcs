@@ -308,4 +308,6 @@ endfunction
 
 nnoremap <F9> :call DeleteEmptyBuffers()<CR>
 
+set clipboard=unnamedplus
+
 
