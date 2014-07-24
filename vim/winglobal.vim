@@ -171,11 +171,6 @@ au VimResized * exe "normal! \<C-w>="
 "remap visual selection block
 nnoremap <leader>v <C-V>
 
-"Ctrl V paste
-nmap <C-V> "+gP
-imap <C-V> <ESC><C-V>i
-vmap <C-C> "+y
-
 "make sure status line is always shown as the second last line / also requires for powerline
 set laststatus=2
 
