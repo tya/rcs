@@ -25,8 +25,9 @@ Bundle 'tpope/vim-unimpaired'
 
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'seebi/dircolors-solarized'
-Bundle 'solarized/xresources'
 Bundle 'seebi/tmux-colors-solarized'
+Bundle 'solarized/xresources'
+Bundle 'solarized-maint/iterm2-solarized'
 
 "if has('python') || has('python3')
 "endif
