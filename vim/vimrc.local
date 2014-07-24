@@ -7,7 +7,7 @@ set expandtab
 set smarttab
 
 "Copy and paste
-set clipboard=unammedplus
+" set clipboard=unammedplus
 nmap <C-V> "+gP
 imap <C-V> <ESC><C-V>i
 vmap <C-C> "+y
