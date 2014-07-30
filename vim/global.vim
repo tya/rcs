@@ -58,8 +58,8 @@ if has('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
 
-"pasting large amount of text no need to autoindent use F10
-set pastetoggle=<F10>
+"pasting large amount of text no need to autoindent
+set pastetoggle=<Leader>pt
 set mouse=a
 
 "sudo w
@@ -131,7 +131,7 @@ if filereadable(expand("~/.tmux.conf"))
 endif
 
 "source and reloads the saved
-nnoremap <F12> :source $MYVIMRC <CR>
+nnoremap <Leader>s :source $MYVIMRC <CR>
 
 "working with split windows
 nnoremap <Leader>l <C-w>v<C-w>l
@@ -301,4 +301,4 @@ function! DeleteEmptyBuffers()
     endif
 endfunction
 
-nnoremap <F9> :call DeleteEmptyBuffers()<CR>
+nnoremap <Leader>deb :call DeleteEmptyBuffers()<CR>

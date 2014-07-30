@@ -22,8 +22,8 @@ if executable('ag')
 endif
 
 "syntastic
-nnoremap <F8> :SyntasticCheck<CR>:Errors<CR>:lclose<CR>
-nnoremap <F7> :SyntasticReset<CR>
+nnoremap <Leader>sc :SyntasticCheck<CR>:Errors<CR>:lclose<CR>
+nnoremap <Leader>sr :SyntasticReset<CR>
 let g:synastic_auto_loc_list = 1
 let g:syntastic_mode_map = {'mode': 'passive',
             \'active_filetypes': [],

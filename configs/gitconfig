@@ -20,7 +20,7 @@
 
 
 [merge]
-    tool = meld
+    tool = vimdiff
 
 [alias]
     type = cat-file -t
