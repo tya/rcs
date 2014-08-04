@@ -8,3 +8,6 @@ sudo apt-get install python-dev libncurses5-dev ruby ruby-dev
 slate alfred
 cVim chrome
 homebrew install coreutils
+
+xbindkeys wmctrl zenity
+xbindkeys -f keys.rc
