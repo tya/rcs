@@ -1,1 +1,2 @@
 set hintchars=hjklasdf
+set editor='bash -lc "mvim -f \$*" mvim '
