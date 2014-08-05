@@ -6,6 +6,10 @@ export DL=$HOME/downloads
 export SB=$HOME/sandbox
 export CH=$HOME/rcs
 
+# mac
+# alias vim="`brew --prefix`/bin/vim"
+# alias ctags="`brew --prefix`/bin/ctags"
+
 alias work='cd $PH'
 alias dl='cd $DL'
 alias play='cd $SB'
