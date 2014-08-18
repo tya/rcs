@@ -15,3 +15,6 @@ alias dl='cd $DL'
 alias play='cd $SB'
 alias cfg='cd $CH'
 alias tmuxnew='$CH/configs/tmuxnew.sh'
+
+# linux
+# xbindkeys -f $CH/config/keys.rc
