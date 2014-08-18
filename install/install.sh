@@ -22,7 +22,6 @@ ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
 ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
 ln -sf $CFG/configs/gitconfig ~/.gitconfig
 cp $CFG/configs/gitconfig.local ~/gitconfig.local
-ln -sf $CFG/git_template ~/.git_template
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
 ln -sf ~/vim/bundle/dircolors-solarized/dircolors.256dark ~/.dir_colors

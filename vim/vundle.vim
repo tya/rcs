@@ -22,6 +22,8 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'xolox/vim-easytags'
+Bundle 'xolox/vim-misc'
 
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'seebi/dircolors-solarized'

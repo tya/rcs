@@ -1,3 +1,13 @@
+"easytags
+let g:easytags_async = 1
+set tags=./tags
+let g:easytags_dynamic_files = 2
+let g:easytags_auto_update = 0
+let g:easytags_auto_highlight = 0
+nnoremap <Leader>ut :UpdateTags<CR>
+nnoremap <Leader>ct :UpdateTags -R <Space>
+
+
 "supertab
 let g:SuperTabDefaultCompletionType = "context"
 

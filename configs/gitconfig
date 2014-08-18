@@ -13,8 +13,6 @@
 
 [core]
     pager = less -S
-    ;excludesfile =
-    ; autocrlf = true
     filemode = false
     editor = vim -f
 
@@ -22,12 +20,8 @@
 [merge]
     tool = vimdiff
 
+
 [alias]
     type = cat-file -t
-
     dump = cat-file -p
-    ctags = !.git/hooks/ctags
 
-
-[init]
-    templatedir = ~/.git_template
