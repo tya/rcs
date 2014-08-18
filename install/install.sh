@@ -21,6 +21,7 @@ cp $CFG/configs/bashrc.local ~/bashrc.local
 ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
 ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
 ln -sf $CFG/configs/gitconfig ~/.gitconfig
+ln -sf $CFG/configs/gitignore_global ~/.gitignore_global
 cp $CFG/configs/gitconfig.local ~/gitconfig.local
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
