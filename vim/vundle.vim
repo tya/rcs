@@ -1,56 +1,58 @@
 filetype off
 set rtp+=$VIMHOME/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-" Bundles here:
-Bundle 'Raimondi/delimitMate'
-Bundle 'Yggdroot/indentLine'
-Bundle 'bling/vim-airline'
-Bundle 'ervandew/supertab'
-Bundle 'gregsexton/gitv'
-Bundle 'jeetsukumaran/vim-filebeagle'
-Bundle 'junegunn/vim-easy-align'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mattn/emmet-vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'sheerun/vim-polyglot'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'xolox/vim-easytags'
-Bundle 'xolox/vim-misc'
+" Plugins here:
+Plugin 'Raimondi/delimitMate'
+Plugin 'Yggdroot/indentLine'
+Plugin 'bling/vim-airline'
+Plugin 'ervandew/supertab'
+Plugin 'gregsexton/gitv'
+Plugin 'jeetsukumaran/vim-filebeagle'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'wellle/targets.vim'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'seebi/dircolors-solarized'
-Bundle 'seebi/tmux-colors-solarized'
-Bundle 'solarized/xresources'
-Bundle 'solarized-maint/iterm2-solarized'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'seebi/dircolors-solarized'
+Plugin 'seebi/tmux-colors-solarized'
+Plugin 'solarized/xresources'
+Plugin 'solarized-maint/iterm2-solarized'
 
 "if has('python') || has('python3')
 "endif
 
 if executable('git')
-    Bundle 'tpope/vim-fugitive'
+    Plugin 'tpope/vim-fugitive'
 endif
 
 if executable('ctags')
-    Bundle 'majutsushi/tagbar'
+    Plugin 'majutsushi/tagbar'
 endif
 
 if executable('ag')
-    Bundle 'dyng/ctrlsf.vim'
+    Plugin 'dyng/ctrlsf.vim'
 endif
 
 
+call vundle#end()
 filetype plugin indent on
 
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
