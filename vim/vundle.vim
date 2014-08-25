@@ -30,7 +30,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'seebi/dircolors-solarized'
 Plugin 'seebi/tmux-colors-solarized'
 Plugin 'solarized/xresources'
-Plugin 'solarized-maint/iterm2-solarized'
 
 "if has('python') || has('python3')
 "endif
