@@ -124,7 +124,7 @@ if filereadable($VIMLOCAL)
 endif
 
 "source and reloads the saved
-nnoremap <F12> :source $MYVIMRC <CR>
+nnoremap <Leader>s :source $MYVIMRC <CR>
 
 "working with split windows
 nnoremap <Leader>l <C-w>v<C-w>l
@@ -283,6 +283,6 @@ function! DeleteEmptyBuffers()
     endif
 endfunction
 
-nnoremap <F9> :call DeleteEmptyBuffers()<CR>
+nnoremap <Leader>deb :call DeleteEmptyBuffers()<CR>
 
 

@@ -1,3 +1,6 @@
+"supertab
+let g:SuperTabDefaultCompletionType = "context"
+
 if executable('git')
     "fugitive
     autocmd BufReadPost fugitive://* set bufhidden=delete
