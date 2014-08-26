@@ -7,7 +7,6 @@ let g:easytags_auto_highlight = 0
 nnoremap <Leader>ut :UpdateTags<CR>
 nnoremap <Leader>ct :UpdateTags -R <Space>
 
-
 "supertab
 let g:SuperTabDefaultCompletionType = "context"
 

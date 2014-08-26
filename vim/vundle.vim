@@ -1,10 +1,10 @@
 filetype off
-set rtp+=$VIMHOME/bundle/vundle/
+set rtp+=$VIMHOME/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Plugins here:
 Plugin 'Raimondi/delimitMate'
@@ -45,7 +45,6 @@ endif
 if executable('ag')
     Plugin 'dyng/ctrlsf.vim'
 endif
-
 
 call vundle#end()
 filetype plugin indent on
