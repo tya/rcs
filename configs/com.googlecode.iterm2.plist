@@ -291,6 +291,20 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0x6a-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>30</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x6b-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>31</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x6c-0x40000</key>
 		<dict>
 			<key>Action</key>
