@@ -68,6 +68,6 @@ let g:ctrlp_user_command = {
 
 if executable('ctags')
     "Tagbar
-    nnoremap <Leader>t :TagbarToggle<CR>
+    nnoremap <Leader>ta :TagbarToggle<CR>
     let g:tagbar_autoclose = 1
 endif
