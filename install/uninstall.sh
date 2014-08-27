@@ -8,6 +8,7 @@ rm ~/.gitignore_global
 rm ~/.tmux.conf
 rm ~/.pentadactyl
 rm ~/.vimperatorrc
+rm ~/vimperatorrc.local
 rm ~/.fonts
 rm ~/.dir_colors
 rm ~/.vimrc

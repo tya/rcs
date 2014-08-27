@@ -20,6 +20,7 @@ ln -sf $CFG/configs/bash_profile ~/.bash_profile
 cp $CFG/configs/bashrc.local ~/bashrc.local
 ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
 ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
+cp $CFG/configs/vimperatorrc.local ~/vimperatorrc.local
 ln -sf $CFG/configs/gitconfig ~/.gitconfig
 ln -sf $CFG/configs/gitignore_global ~/.gitignore_global
 cp $CFG/configs/gitconfig.local ~/gitconfig.local
@@ -31,10 +32,9 @@ ln -sf $CFG/configs/Xresources ~/.Xresources
 if [[ $platform == 'linux' ]]; then
     ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
 else
-    ln -sf $CFG/configs/mac_tmux.conf ~/.tmux.conf
+    ln -sf $CFG/configs/mactmux.conf ~/.tmux.conf
+    ln -sf $CFG/configs/slate ~/.slate
 fi
-
-ln -sf $CFG/configs/slate ~/.slate
 
 mkdir -p ~/projects/todo
 mkdir -p ~/sandbox

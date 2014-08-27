@@ -1,2 +1,6 @@
 set hintchars=hjklasdf
-set editor='bash -lc "mvim -f \$*" mvim '
+
+nnoremap j 7j
+nnoremap k 7k
+
+source ~/vimperatorrc.local

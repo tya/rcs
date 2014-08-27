@@ -59,7 +59,7 @@ if has('autocmd')
 endif
 
 "pasting large amount of text no need to autoindent
-set pastetoggle=<Leader>pt
+set paste
 set mouse=a
 
 "sudo w
@@ -136,11 +136,6 @@ nnoremap <Leader>s :source $MYVIMRC <CR>
 "working with split windows
 nnoremap <Leader>l <C-w>v<C-w>l
 nnoremap <Leader>j <C-w>s<C-w>j
-"moving around splits
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 
 "Command history
 cnoremap <C-j> <down>
