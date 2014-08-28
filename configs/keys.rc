@@ -1,2 +1,2 @@
 "WINDOWID='' app=$(zenity --text "App" --title "App" --entry) && wmctrl -R $app"
-  alt + a
+  control + space
