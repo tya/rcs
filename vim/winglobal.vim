@@ -27,8 +27,8 @@ set nrformats-=octal
 set display+=lastline
 
 "set numbering
-set number
 set relativenumber
+set number
 
 "only have number for active window
 ":au WinEnter * :setlocal relativenumber
@@ -58,11 +58,13 @@ if has('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
 
+"pasting large amount of text no need to autoindent
 set paste
 set mouse=a
 
 "sudo w
 cmap w!! w !sudo tee% >/dev/null
+
 "change the leader key
 let mapleader=','
 
@@ -261,8 +263,8 @@ endfunction
 nnoremap <Space> :call WindowSwapToggle()<CR>
 
 "maximizing current buffer by open it in aother tab
-nmap te :tabedit %<CR>
-nmap tc :tabclose<CR>
+nmap <Leader>te :tabedit %<CR>
+nmap <Leader>tc :tabclose<CR>
 
 function! DeleteEmptyBuffers()
     let [i, n; empty] = [1, bufnr('$')]
@@ -277,6 +279,4 @@ function! DeleteEmptyBuffers()
     endif
 endfunction
 
-nnoremap <Leader>deb :call DeleteEmptyBuffers()<CR>
-
-
+nmap <Leader>deb :call DeleteEmptyBuffers()<CR>
