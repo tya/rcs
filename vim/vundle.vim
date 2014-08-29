@@ -11,7 +11,6 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'Yggdroot/indentLine'
 Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
-Plugin 'gregsexton/gitv'
 Plugin 'jeetsukumaran/vim-filebeagle'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'kien/ctrlp.vim'
@@ -35,6 +34,7 @@ Plugin 'solarized/xresources'
 "endif
 
 if executable('git')
+    Plugin 'gregsexton/gitv'
     Plugin 'tpope/vim-fugitive'
 endif
 
