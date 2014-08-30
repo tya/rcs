@@ -12,7 +12,6 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
-Plugin 'gregsexton/gitv'
 Plugin 'jeetsukumaran/vim-filebeagle'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'kien/ctrlp.vim'
@@ -26,6 +25,7 @@ Plugin 'wellle/targets.vim'
 
 if executable('git')
     Plugin 'tpope/vim-fugitive'
+    Plugin 'gregsexton/gitv'
 endif
 
 call vundle#end()

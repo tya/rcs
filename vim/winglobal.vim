@@ -59,7 +59,7 @@ if has('autocmd')
 endif
 
 "pasting large amount of text no need to autoindent
-set paste
+set pastetoggle=<Leader>tp
 set mouse=a
 
 "sudo w
@@ -125,11 +125,17 @@ if filereadable($VIMLOCAL)
 endif
 
 "source and reloads the saved
-nnoremap <Leader>s :source $MYVIMRC <CR>
+nnoremap <Leader>r :source $MYVIMRC <CR>
 
 "working with split windows
-nnoremap <Leader>l <C-w>v<C-w>l
-nnoremap <Leader>j <C-w>s<C-w>j
+nnoremap <Leader>\ <C-w>v<C-w>l
+nnoremap <Leader>- <C-w>s<C-w>j
+
+"split navigation
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 
 "Command history
 cnoremap <C-j> <down>
