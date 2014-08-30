@@ -35,6 +35,19 @@ let g:ctrlp_custom_ignore = {
             \ 'file': '\v\.(exe|so|dll)$',
             \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
             \ }
+
+let g:ctrlp_prompt_mappings = {
+\ 'ToggleType(1)':        ['<c-up>'],
+\ 'ToggleType(-1)':       ['<c-down>'],
+\ 'PrtDeleteWord()':      ['<c-w>'],
+\ 'PrtSelectMove("j")':   ['<c-b>', '<down>'],
+\ 'PrtSelectMove("k")':   ['<c-f>', '<up>'],
+\ 'PrtHistory(-1)':       ['<c-d>'],
+\ 'AcceptSelection("t")': ['<c-o>'],
+\ 'ToggleByFname()':      ['<c-i>'],
+\ 'OpenMulti()':          ['<c-m>'],
+\ }
+
 let g:ctrlp_user_command = {
             \ 'types': {
             \ 1: ['.git', 'cd %s && git ls-files --exclude-standard -co'],

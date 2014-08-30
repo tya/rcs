@@ -81,7 +81,6 @@ nnoremap <Leader><space> :noh<cr>
 set pastetoggle=<Leader>tp
 set mouse=a
 
-
 "handle long lines correctly
 set wrap
 set textwidth=79
