@@ -58,10 +58,6 @@ if has('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
 
-"pasting large amount of text no need to autoindent
-set paste
-set mouse=a
-
 "sudo w
 cmap w!! w !sudo tee % >/dev/null
 
@@ -80,6 +76,11 @@ set hlsearch
 
 "clear all searches with ,space
 nnoremap <Leader><space> :noh<cr>
+
+"pasting large amount of text no need to autoindent
+set pastetoggle=<Leader>tp
+set mouse=a
+
 
 "handle long lines correctly
 set wrap
