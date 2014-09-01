@@ -27,7 +27,6 @@ ln -sf $CFG/configs/gitignore_global ~/.gitignore_global
 cp $CFG/configs/gitconfig.local ~/gitconfig.local
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
-ln -sf ~/vim/bundle/dircolors-solarized/dircolors.256dark ~/.dir_colors
 ln -sf $CFG/configs/Xresources ~/.Xresources
 ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
 
@@ -35,5 +34,5 @@ ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
 ln -sf $CFG/configs/slate ~/.slate
 
 mkdir -p ~/projects/todo
-mkdir -p ~/sandbox
+mkdir -p ~/sandbox/repos
 source ~/.bashrc

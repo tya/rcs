@@ -30,6 +30,8 @@ then
     source ~/bashrc.local
 fi
 
+alias uprepos='find $REP -mindepth 1 -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree={} pull origin master \;'
+
 shopt -s cdspell
 bind 'set completion-ignore-case on'
 

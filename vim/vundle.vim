@@ -26,9 +26,6 @@ Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'seebi/dircolors-solarized'
-Plugin 'seebi/tmux-colors-solarized'
-Plugin 'solarized/xresources'
 
 "if has('python') || has('python3')
 "endif
