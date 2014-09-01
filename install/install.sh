@@ -28,13 +28,10 @@ rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
 ln -sf ~/vim/bundle/dircolors-solarized/dircolors.256dark ~/.dir_colors
 ln -sf $CFG/configs/Xresources ~/.Xresources
+ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
 
-if [[ $platform == 'linux' ]]; then
-    ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
-else
-    ln -sf $CFG/configs/mactmux.conf ~/.tmux.conf
-    ln -sf $CFG/configs/slate ~/.slate
-fi
+# if [[ $platform == 'linux' ]]; then
+ln -sf $CFG/configs/slate ~/.slate
 
 mkdir -p ~/projects/todo
 mkdir -p ~/sandbox

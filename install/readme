@@ -5,9 +5,15 @@ sudo apt-get install python-dev libncurses5-dev ruby ruby-dev
 
 ./configure --enable-perlinterp --enable-pythoninterp --enable-rubyinterp --enable-cscope  --with-features=huge --prefix=$directory
 
+#mac
 slate alfred
 cVim chrome
-homebrew install coreutils
+homebrew install coreutils iterm2
 
+#linux
 xbindkeys wmctrl zenity
 xbindkeys -f keys.rc
+
+#common
+rainbarf
+tmux

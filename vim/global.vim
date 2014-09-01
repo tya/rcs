@@ -108,11 +108,6 @@ set iskeyword+=_,$,@,%,#
 nnoremap j gj
 nnoremap k gk
 
-"get rid of help key
-nnoremap <F1> <ESC>
-inoremap <F1> <ESC>
-vnoremap <F1> <ESC>
-
 "reselect the text that was pasted so I can perform commands
 nnoremap <Leader>p V`]
 
@@ -134,14 +129,14 @@ endif
 nnoremap <Leader>r :source $MYVIMRC <CR>
 
 "working with split windows
-nnoremap <Leader>\ <C-w>v<C-w>l
-nnoremap <Leader>- <C-w>s<C-w>j
+nnoremap <Leader>l <C-w>v<C-w>l
+nnoremap <Leader>j <C-w>s<C-w>j
 
 "split navigation
-nnoremap <Leader>h <C-w>h
-nnoremap <Leader>j <C-w>j
-nnoremap <Leader>k <C-w>k
-nnoremap <Leader>l <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "Command history
 cnoremap <C-j> <down>

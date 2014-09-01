@@ -66,17 +66,6 @@ let g:ctrlp_user_command = {
             \ 'fallback': 'ag %s -l --nocolor --hidden -g ""'
             \ }
 
- let g:ctrlp_prompt_mappings = {
-\ 'ToggleType(1)':        ['<c-up>'],
-\ 'ToggleType(-1)':       ['<c-down>'],
-\ 'PrtDeleteWord()':      ['<c-w>'],
-\ 'PrtSelectMove("j")':   ['<c-b>', '<down>'],
-\ 'PrtSelectMove("k")':   ['<c-f>', '<up>'],
-\ 'PrtHistory(-1)':       ['<c-d>'],
-\ 'AcceptSelection("t")': ['<c-o>'],
-\ 'ToggleByFname()':      ['<c-i>'],
-\ 'OpenMulti()':          ['<c-m>'],
-\ }
 if executable('ctags')
     "Tagbar
     nnoremap <Leader>ta :TagbarToggle<CR>
