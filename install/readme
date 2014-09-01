@@ -13,6 +13,7 @@ homebrew install coreutils iterm2
 #linux
 xbindkeys wmctrl zenity
 xbindkeys -f keys.rc
+xclip for tmux-yank
 
 #common
 rainbarf

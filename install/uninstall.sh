@@ -14,4 +14,6 @@ rm ~/.dir_colors
 rm ~/.vimrc
 rm ~/.Xresources
 rm -rf ~/vim
+rm -rf ~/.tmux
 rm ~/.slate
+

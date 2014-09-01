@@ -13,6 +13,7 @@ ln -sf $CFG/vim/vimrc.vim ~/.vimrc
 ln -sf $CFG/vim/*.vim ~/vim/.
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim "+BundleInstall" "+quitall"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp $CFG/vim/vimrc.local ~/vimrc.local
 
 ln -sf $CFG/configs/bashrc ~/.bashrc
