@@ -31,12 +31,12 @@ set relativenumber
 set number
 
 "only have number for active window
-":au WinEnter * :setlocal relativenumber
-":au WinEnter * :setlocal number
-":au WinLeave * :setlocal nonumber
-":au WinLeave * :setlocal norelativenumber
+"au WinEnter * :setlocal number
+"au WinEnter * :setlocal relativenumber
+"au WinLeave * :setlocal nonumber
+"au WinLeave * :setlocal norelativenumber
 
-set wildignore+=.hg,.git,.svn
+set wildignore+=*/.hg/*,*/.git/*,*/.svn/*
 set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest
 set wildignore+=*.swp,*bak,*.pyc,*.class
 set wildignore+=*.aux,*.out,*.toc
@@ -52,15 +52,11 @@ set winaltkeys=no
 set autoread
 set fileformats+=mac
 
-"set spell
+"turn off annoying visual and audible bell
 set noeb vb t_vb=
 if has('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
-
-"pasting large amount of text no need to autoindent
-set pastetoggle=<Leader>tp
-set mouse=a
 
 "sudo w
 cmap w!! w !sudo tee% >/dev/null
@@ -80,6 +76,10 @@ set hlsearch
 
 "clear all searches with ,space
 nnoremap <Leader><space> :noh<cr>
+
+"pasting large amount of text no need to autoindent
+set pastetoggle=<Leader>tp
+set mouse=a
 
 "handle long lines correctly
 set wrap
@@ -108,11 +108,6 @@ set iskeyword+=_,$,@,%,#
 nnoremap j gj
 nnoremap k gk
 
-"get rid of help key
-nnoremap <F1> <ESC>
-inoremap <F1> <ESC>
-vnoremap <F1> <ESC>
-
 "reselect the text that was pasted so I can perform commands
 nnoremap <Leader>p V`]
 
@@ -128,14 +123,14 @@ endif
 nnoremap <Leader>r :source $MYVIMRC <CR>
 
 "working with split windows
-nnoremap <Leader>\ <C-w>v<C-w>l
-nnoremap <Leader>- <C-w>s<C-w>j
+nnoremap <Leader>l <C-w>v<C-w>l
+nnoremap <Leader>j <C-w>s<C-w>j
 
 "split navigation
-nnoremap <Leader>h <C-w>h
-nnoremap <Leader>j <C-w>j
-nnoremap <Leader>k <C-w>k
-nnoremap <Leader>l <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "Command history
 cnoremap <C-j> <down>
