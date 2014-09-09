@@ -27,7 +27,7 @@ endif
 "ctlrsf
 if executable('ag')
     nnoremap <Leader>fo :CtrlSFOpen<CR>
-    nnoremap <Leader>ff :CtrlSF<Space>
+    nnoremap <Leader>ff :CtrlSF --ignore tags<Space>
 endif
 
 "syntastic
