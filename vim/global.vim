@@ -142,6 +142,9 @@ nnoremap <C-l> <C-w>l
 cnoremap <C-j> <down>
 cnoremap <C-k> <up>
 
+" Open file under cursor in new tab
+nnoremap gF <C-w>gf
+
 "Keep search matches in the middle of the window.
 nnoremap * *zzzv
 nnoremap # #zzzv
