@@ -95,6 +95,7 @@ endif
 
 "show hidden characters
 set list
+set showbreak=↪
 if &listchars ==# 'eol:$'
   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
   if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
@@ -281,3 +282,5 @@ function! DeleteEmptyBuffers()
 endfunction
 
 nmap <Leader>deb :call DeleteEmptyBuffers()<CR>
+map Q @@
+map q: :q

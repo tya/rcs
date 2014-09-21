@@ -20,7 +20,6 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
 Plugin 'wellle/targets.vim'
 
 if executable('git')
