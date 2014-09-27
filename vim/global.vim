@@ -27,7 +27,7 @@ set nrformats-=octal
 set display+=lastline
 
 "set numbering
-set relativenumber
+" set relativenumber
 set number
 
 "only have number for active window
