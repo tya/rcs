@@ -7,28 +7,21 @@ let g:easytags_auto_highlight = 0
 nnoremap <Leader>ut :UpdateTags<CR>
 nnoremap <Leader>ct :UpdateTags -R <Space>
 
-"supertab
-let g:SuperTabDefaultCompletionType = "context"
+"fugitive
+autocmd BufReadPost fugitive://* set bufhidden=delete
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gg :Ggrep!<Space>
+nnoremap <Leader>gl :Glog! -S
 
-if executable('git')
-    "fugitive
-    autocmd BufReadPost fugitive://* set bufhidden=delete
-    nnoremap <Leader>gs :Gstatus<CR>
-    nnoremap <Leader>gg :Ggrep!<Space>
-    nnoremap <Leader>gl :Glog! -S
-
-    "gitv
-    let g:Gitv_WipeAllOnClose = 1
-    let g:Gitv_DoNotMapCtrlKey = 1
-    nnoremap <Leader>gv :Gitv --all<CR>
-    nnoremap <Leader>gV :Gitv! --all<CR>
-endif
+"gitv
+let g:Gitv_WipeAllOnClose = 1
+let g:Gitv_DoNotMapCtrlKey = 1
+nnoremap <Leader>gv :Gitv --all<CR>
+nnoremap <Leader>gV :Gitv! --all<CR>
 
 "ctlrsf
-if executable('ag')
-    nnoremap <Leader>fo :CtrlSFOpen<CR>
-    nnoremap <Leader>ff :CtrlSF --ignore tags<Space>
-endif
+nnoremap <Leader>fo :CtrlSFOpen<CR>
+nnoremap <Leader>ff :CtrlSF --ignore tags<Space>
 
 "syntastic
 nnoremap <Leader>sc :SyntasticCheck<CR>:Errors<CR>:lclose<CR>
@@ -49,25 +42,6 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 "delmimitMate
 imap <C-f> <Plug>delimitMateJumpMany
 
-"Ctrlp
-let g:ctrlp_switch_buffer = 'et'
-nnoremap <Leader>b :CtrlPBuffer<CR>
-nnoremap <Leader>cp :CtrlP<Space>
-let g:ctrlp_custom_ignore = {
-            \ 'dir': '\v[\/]\.(git|hg|svn)$',
-            \ 'file': '\v\.(exe|so|dll)$',
-            \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
-            \ }
-let g:ctrlp_user_command = {
-            \ 'types': {
-            \ 1: ['.git', 'cd %s && git ls-files --exclude-standard -co'],
-            \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-            \ },
-            \ 'fallback': 'ag %s -l --nocolor --hidden -g ""'
-            \ }
-
-if executable('ctags')
-    "Tagbar
-    nnoremap <Leader>ta :TagbarToggle<CR>
-    let g:tagbar_autoclose = 1
-endif
+"Tagbar
+nnoremap <Leader>ta :TagbarToggle<CR>
+let g:tagbar_autoclose = 1
