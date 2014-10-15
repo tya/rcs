@@ -1,3 +1,29 @@
+call plug#begin('$VIMHOME/plugged')
+
+Plug 'Raimondi/delimitMate'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'Shougo/unite.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'dyng/ctrlsf.vim'
+Plug 'gregsexton/gitv', { 'on': 'Gitv' }
+Plug 'jeetsukumaran/vim-filebeagle'
+Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
+Plug 'majutsushi/tagbar'
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'wellle/targets.vim'
+Plug 'xolox/vim-easytags', { 'on': 'UpdateTags' }
+Plug 'xolox/vim-misc'
+
+call plug#end()
+
 "Syntax related stuff
 syntax on
 set autoindent
