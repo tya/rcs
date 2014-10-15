@@ -13,7 +13,7 @@ nnoremap <silent> <Leader>uy :<C-u>Unite history/yank<CR>
 
 nnoremap <silent> <Leader>ub :<C-u>Unite buffer<CR>
 
-nnoremap <silent> / :<C-u>Unite -buffer-name=search line:forward -no-quit<CR>
+nnoremap <silent> / :<C-u>Unite -buffer-name=search line:forward<CR>
 
 " easytags
 let g:easytags_async = 1
