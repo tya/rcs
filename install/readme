@@ -3,8 +3,15 @@ sudo apt-get install libgnome2-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev 
 
 sudo apt-get install python-dev libncurses5-dev ruby ruby-dev
 
-./configure --enable-perlinterp --enable-pythoninterp --enable-rubyinterp --enable-cscope  --with-features=huge --prefix=$directory
-
+./configure --with-features=huge \
+            --enable-rubyinterp \
+            --enable-pythoninterp \
+            --with-python-config-dir=/usr/lib/python2.7-config \
+            --enable-perlinterp \
+            --enable-gui=gtk2 --enable-cscope --prefix=/usr \
+            --enable-luainterp \
+            --with-lua-prefix=/usr/local
+            --prefix=$directory
 #mac
 slate alfred
 cVim chrome
