@@ -1,12 +1,12 @@
-"Tab settings
-set tabstop=4
-set shiftwidth=4
-set shiftround
-set softtabstop=4
-set expandtab
-set smarttab
+" Tab settings
+" set tabstop=4
+" set shiftwidth=4
+" set shiftround
+" set softtabstop=4
+" set expandtab
+" set smarttab
 
-"Copy and paste
+" Copy and paste
  set clipboard=unammed
 " nmap <C-V> "*p
 " imap <C-V> <ESC><C-V>i
