@@ -11,8 +11,9 @@ mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
 ln -sf $CFG/vim/vimrc.vim ~/.vimrc
 ln -sf $CFG/vim/*.vim ~/vim/.
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim "+PluginInstall" "+quitall"
+mkdir -p ~/.vim/autoload
+curl -fLo ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim "+PlugInstall" "+quitall"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp $CFG/vim/vimrc.local ~/vimrc.local
 
