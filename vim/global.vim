@@ -1,6 +1,7 @@
 call plug#begin('$VIMHOME/plugged')
 
 Plug 'Raimondi/delimitMate'
+Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Shougo/unite.vim'
 Plug 'Yggdroot/indentLine'
