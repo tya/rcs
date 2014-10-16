@@ -11,9 +11,6 @@ mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
 ln -sf $CFG/vim/vimrc.vim ~/.vimrc
 ln -sf $CFG/vim/*.vim ~/vim/.
-mkdir -p ~/.vim/autoload
-curl -fLo ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim "+PlugInstall" "+quitall"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp $CFG/vim/vimrc.local ~/vimrc.local
 
@@ -34,6 +31,6 @@ ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
 # if [[ $platform == 'linux' ]]; then
 ln -sf $CFG/configs/slate ~/.slate
 
-mkdir -p ~/projects/todo
+mkdir -p ~/projects/notes
 mkdir -p ~/sandbox/repos
 source ~/.bashrc

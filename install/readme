@@ -13,6 +13,8 @@ sudo apt-get install python-dev libncurses5-dev ruby ruby-dev
             --with-lua-prefix=/usr/local
             --prefix=$directory
 #mac
+rvm system
+brew install vim --with-features=huge --with-cscope --with-lua --with-python --with-perl --with-ruby
 slate alfred
 cVim chrome
 homebrew install coreutils iterm2
