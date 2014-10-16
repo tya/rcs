@@ -1,3 +1,8 @@
+" Filebeagle
+let g:filebeagle_suppress_keymaps = 1
+map <silent> <Leader>d <Plug>FileBeagleOpenCurrentWorkingDir
+map <silent> - <Plug>FileBeagleOpenCurrentBufferDir
+
 " unite
 call unite#custom#profile('default', 'context', {
 \ 'start_insert': 1,
@@ -5,13 +10,13 @@ call unite#custom#profile('default', 'context', {
 \ 'direction': 'botright',
 \ })
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nnoremap <silent> <Leader>ua :<C-u>Unite file_rec/async:!<CR>
-nnoremap <silent> <Leader>ug :<C-u>Unite file_rec/git:--cached:--others:--exclude-standard<CR>
+nnoremap <silent> <Leader>f :<C-u>Unite file_rec/async:!<CR>
+nnoremap <silent> <Leader>g :<C-u>Unite file_rec/git:--cached:--others:--exclude-standard<CR>
 
 let g:unite_source_history_yank_enable = 1
-nnoremap <silent> <Leader>uy :<C-u>Unite history/yank<CR>
+nnoremap <silent> <Leader>y :<C-u>Unite history/yank<CR>
 
-nnoremap <silent> <Leader>ub :<C-u>Unite buffer<CR>
+nnoremap <silent> <Leader>b :<C-u>Unite buffer<CR>
 
 nnoremap <silent> / :<C-u>Unite -buffer-name=search line:forward<CR>
 
