@@ -26,11 +26,6 @@ alias uprepos='find $REP -mindepth 1 -maxdepth 1 -type d -exec git --git-dir={}/
 shopt -s cdspell
 bind 'set completion-ignore-case on'
 
-if [ -f ~/.dir_colors ];
-then
-    eval `dircolors ~/.dir_colors`
-fi
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Copy the original fzf function to __fzf
 declare -f __fzf > /dev/null ||
@@ -75,4 +70,10 @@ if [ -f ~/bashrc.local ];
 then
     source ~/bashrc.local
 fi
+
+if [ -f ~/.dir_colors ];
+then
+    eval `dircolors ~/.dir_colors`
+fi
+
 
