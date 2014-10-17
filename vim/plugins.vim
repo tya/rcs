@@ -76,27 +76,12 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+
+
 " Filebeagle
 let g:filebeagle_suppress_keymaps = 1
 map <silent> <Leader>d <Plug>FileBeagleOpenCurrentWorkingDir
 map <silent> - <Plug>FileBeagleOpenCurrentBufferDir
-
-" unite
-call unite#custom#profile('default', 'context', {
-\ 'start_insert': 1,
-\ 'winheight': 10,
-\ 'direction': 'botright',
-\ })
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nnoremap <silent> <Leader>f :<C-u>Unite file_rec/async:!<CR>
-nnoremap <silent> <Leader>g :<C-u>Unite file_rec/git:--cached:--others:--exclude-standard<CR>
-
-let g:unite_source_history_yank_enable = 1
-nnoremap <silent> <Leader>y :<C-u>Unite history/yank<CR>
-
-nnoremap <silent> <Leader>b :<C-u>Unite buffer<CR>
-
-nnoremap <silent> / :<C-u>Unite -buffer-name=search line:forward<CR>
 
 " easytags
 let g:easytags_async = 1
@@ -145,3 +130,41 @@ imap <C-f> <Plug>delimitMateJumpMany
 " Tagbar
 nnoremap <Leader>ta :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
+
+" fzf
+nnoremap <silent> <Leader>f :FZF<CR>
+" List of buffers
+function! BufList()
+  redir => ls
+  silent ls
+  redir END
+  return split(ls, '\n')
+endfunction
+
+function! BufOpen(e)
+  execute 'buffer '. matchstr(a:e, '^[ 0-9]*')
+endfunction
+
+nnoremap <silent> <Leader>b :call fzf#run({
+\   'source':      reverse(BufList()),
+\   'sink':        function('BufOpen'),
+\   'options':     '+m',
+\   'tmux_height': '40%'
+\ })<CR>
+
+
+" Search current buffer
+function! BufGet()
+  return map(getline(1, '$'), "printf('%5d  %s', v:key + 1, v:val)")
+endfunction
+
+function! LineOpen(e)
+  execute 'normal! '. matchstr(a:e, '[0-9]\+'). 'G'
+endfunction
+
+nnoremap <silent> / :call fzf#run({
+\   'source':      BufGet(),
+\   'sink':        function('LineOpen'),
+\   'options':     '+m',
+\   'tmux_height': '40%'
+\ })<CR>

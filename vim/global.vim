@@ -9,8 +9,6 @@ call plug#begin('$VIMHOME/plugged')
 
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'Shougo/unite.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
@@ -19,6 +17,7 @@ Plug 'gorkunov/smartpairs.vim'
 Plug 'gregsexton/gitv', { 'on': 'Gitv' }
 Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
 Plug 'scrooloose/syntastic'
