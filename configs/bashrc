@@ -15,7 +15,6 @@ function ignore { $1 $2 &>/dev/null & }
 
 export EDITOR=vim
 export LESS=-RFX
-export HISTTIMEFORMAT="%d/%m/%y %T "
 
 export PS1="\[\e[0;36m\]\u\[\e[0m\] on \[\e[0;34m\]\h\[\e[0m\] in \[\e[0;33m\]\w\[\e[0m\] with \[\e[0;35m\]\j\[\e[0m\] job(s)\n\$(if [[ \$? == 0 ]]; then echo \"\[\e[0;32m\]:)\[\e[0m\]\"; else echo \"\[\e[0;31m\]:(\[\e[0m\]\"; fi) "
 
@@ -51,8 +50,8 @@ fbr() {
 fco() {
     local commits commit
     commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
-      commit=$(echo "$commits" | fzf +s +m -e) &&
-      git checkout $(echo "$commit" | sed "s/ .*//")
+        commit=$(echo "$commits" | fzf +s +m -e) &&
+        git checkout $(echo "$commit" | sed "s/ .*//")
 }
 
 # fh - repeat history
