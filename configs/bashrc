@@ -9,13 +9,9 @@ bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
 alias ls='ls --color=auto'
-alias lsa='ls -alh --color=auto'
 alias grep='grep --color=auto'
 
 function ignore { $1 $2 &>/dev/null & }
-function lt() { ls -ltrsa "$@" | tail; }
-function psgrep() { ps axuf | grep -v grep | grep "$a" -i --color=auto; }
-function fname() { find . -iname "*$@*"; }
 
 export EDITOR=vim
 export LESS=-RFX
@@ -26,11 +22,6 @@ export PS1="\[\e[0;36m\]\u\[\e[0m\] on \[\e[0;34m\]\h\[\e[0m\] in \[\e[0;33m\]\w
 complete -cf sudo
 complete -cf man
 
-if [ -f ~/bashrc.local ];
-then
-    source ~/bashrc.local
-fi
-
 alias uprepos='find $REP -mindepth 1 -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree={} pull origin master \;'
 
 shopt -s cdspell
@@ -40,3 +31,59 @@ if [ -f ~/.dir_colors ];
 then
     eval `dircolors ~/.dir_colors`
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# fe [FUZZY PATTERN] - Open the selected file with the default editor
+#   - Bypass fuzzy finder if there's only one match (--select-1)
+#   - Exit if there's no match (--exit-0)
+fe() {
+    local file
+    file=$(fzf --query="$1" --select-1 --exit-0)
+    [ -n "$file" ] && ${EDITOR:-vim} "$file"
+}
+
+# fd - cd to selected directory
+fd() {
+    local dir
+    dir=$(find ${1:-*} -path '*/\.*' -prune \
+                    -o -type d -print 2> /dev/null | fzf +m) &&
+    cd "$dir"
+}
+
+# fkill - kill process
+fkill() {
+    ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
+}
+
+# fda - including hidden directories
+fda() {
+    local dir
+    dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
+}
+
+fbr() {
+    local branches branch
+    branches=$(git branch) &&
+      branch=$(echo "$branches" | fzf +s +m) &&
+      git checkout $(echo "$branch" | sed "s/.* //")
+}
+
+# fco - checkout git commit
+fco() {
+    local commits commit
+    commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
+      commit=$(echo "$commits" | fzf +s +m -e) &&
+      git checkout $(echo "$commit" | sed "s/ .*//")
+}
+
+# fh - repeat history
+fh() {
+  eval $(([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s | sed 's/ *[0-9]* *//')
+}
+
+if [ -f ~/bashrc.local ];
+then
+    source ~/bashrc.local
+fi
+
