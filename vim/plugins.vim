@@ -83,15 +83,6 @@ let g:filebeagle_suppress_keymaps = 1
 map <silent> <Leader>d <Plug>FileBeagleOpenCurrentWorkingDir
 map <silent> - <Plug>FileBeagleOpenCurrentBufferDir
 
-" easytags
-let g:easytags_async = 1
-set tags=./tags
-let g:easytags_dynamic_files = 2
-let g:easytags_auto_update = 0
-let g:easytags_auto_highlight = 0
-nnoremap <Leader>ut :UpdateTags<CR>
-nnoremap <Leader>ct :UpdateTags -R <Space>
-
 " fugitive
 autocmd BufReadPost fugitive://* set bufhidden=delete
 nnoremap <Leader>gs :Gstatus<CR>
@@ -128,7 +119,7 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 imap <C-f> <Plug>delimitMateJumpMany
 
 " Tagbar
-nnoremap <Leader>ta :TagbarToggle<CR>
+nnoremap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
 " fzf

@@ -29,8 +29,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'wellle/targets.vim'
-Plug 'xolox/vim-easytags', { 'on': 'UpdateTags' }
-Plug 'xolox/vim-misc'
 
 call plug#end()
 
@@ -337,8 +335,6 @@ function! DeleteEmptyBuffers()
 endfunction
 
 nmap <Leader>deb :call DeleteEmptyBuffers()<CR>
-nnoremap <Leader>tf <C-]>
-nnoremap <Leader>tb <C-t>
 
 " get rid of that annoying Ex
 map Q @@
