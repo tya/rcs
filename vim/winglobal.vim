@@ -135,11 +135,10 @@ nnoremap k gk
 nnoremap <Leader>p V`]
 
 "open up vimrc files in a new vertical window
-nnoremap <Leader>ev <C-w><C-v><C-l>:e $CONFIGHOME/winvundle.vim <CR>
 nnoremap <Leader>eg <C-w><C-v><C-l>:e $CONFIGHOME/winglobal.vim <CR>
 nnoremap <Leader>ep <C-w><C-v><C-l>:e $CONFIGHOME/winplugins.vim <CR>
 if filereadable($VIMLOCAL)
-    nnoremap <Leader>el <C-w><C-v><C-l>:e $VIMLOCAL<CR>
+    nnoremap <Leader>ev <C-w><C-v><C-l>:e $VIMLOCAL<CR>
 endif
 
 "source and reloads the saved
