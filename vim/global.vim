@@ -147,16 +147,20 @@ nnoremap k gk
 nnoremap <Leader>p V`]
 
 " open up vimrc files in a new vertical window
-nnoremap <Leader>eg <C-w><C-v><C-l>:e $VIMHOME/global.vim <CR>
-nnoremap <Leader>ep <C-w><C-v><C-l>:e $VIMHOME/plugins.vim <CR>
+nnoremap <Leader>eg <C-w><C-v><C-l>:e $CONFIGHOME/vim/global.vim <CR>
+nnoremap <Leader>ep <C-w><C-v><C-l>:e $CONFIGHOME/vim/plugins.vim <CR>
 if filereadable(expand("~/vimrc.local"))
-    nnoremap <Leader>el <C-w><C-v><C-l>:e ~/vimrc.local<CR>
+    nnoremap <Leader>ev <C-w><C-v><C-l>:e ~/vimrc.local<CR>
 endif
 if filereadable(expand("~/.bashrc"))
-    nnoremap <Leader>eb <C-w><C-v><C-l>:e ~/.bashrc <CR>
+    nnoremap <Leader>eb <C-w><C-v><C-l>:e $CONFIGHOME/configs/bashrc <CR>
 endif
 if filereadable(expand("~/.tmux.conf"))
-    nnoremap <Leader>et <C-w><C-v><C-l>:e ~/.tmux.conf <CR>
+    nnoremap <Leader>et <C-w><C-v><C-l>:e $CONFIGHOME/configs/tmux.conf <CR>
+endif
+
+if filereadable(expand("~/bashrc.local"))
+    nnoremap <Leader>el <C-w><C-v><C-l>:e ~/bashrc.local<CR>
 endif
 
 " source and reloads the saved
