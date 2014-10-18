@@ -1,10 +1,3 @@
-if empty(glob('~/vimfiles/autoload/plug.vim'))
-  silent !mkdir -p ~/vimfiles/autoload
-  silent !curl -fLo ~/vimfiles/autoload/plug.vim
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall
-endif
-
 call plug#begin('~/vimfiles/plugged')
 
 Plug 'Raimondi/delimitMate'
