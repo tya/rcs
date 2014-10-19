@@ -119,7 +119,7 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 imap <C-f> <Plug>delimitMateJumpMany
 
 " Tagbar
-nnoremap <Leader>tb :TagbarToggle<CR>
+nnoremap <Leader>t :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
 " fzf

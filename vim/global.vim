@@ -322,8 +322,7 @@ endfunction
 nnoremap <Space> :call WindowSwapToggle()<CR>
 
 " maximizing current buffer by open it in aother tab
-nmap <Leader>te :tabedit %<CR>
-nmap <Leader>tc :tabclose<CR>
+nmap <Leader>z :tabedit %<CR>
 
 function! DeleteEmptyBuffers()
     let [i, n; empty] = [1, bufnr('$')]
@@ -338,7 +337,7 @@ function! DeleteEmptyBuffers()
     endif
 endfunction
 
-nmap <Leader>deb :call DeleteEmptyBuffers()<CR>
+nmap <Leader>c :call DeleteEmptyBuffers()<CR>
 
 " get rid of that annoying Ex
 map Q @@
