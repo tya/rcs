@@ -115,7 +115,7 @@ let g:airline_theme = 'solarized'
 " easy align
 vnoremap <silent> <Enter> :EasyAlign<cr>
 
-"delmimitMate
+" delmimitMate
 imap <C-f> <Plug>delimitMateJumpMany
 
 " Tagbar
@@ -123,7 +123,7 @@ nnoremap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
 " fzf
-nnoremap <silent> <Leader>f :FZF<CR>
+nnoremap <silent> <Leader>f :FZF<Space>
 " List of buffers
 function! BufList()
   redir => ls
