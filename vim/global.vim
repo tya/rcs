@@ -16,8 +16,8 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'gorkunov/smartpairs.vim'
 Plug 'gregsexton/gitv', { 'on': 'Gitv' }
 Plug 'jeetsukumaran/vim-filebeagle'
-Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
 Plug 'scrooloose/syntastic'

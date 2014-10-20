@@ -153,7 +153,7 @@ function! LineOpen(e)
   execute 'normal! '. matchstr(a:e, '[0-9]\+'). 'G'
 endfunction
 
-nnoremap <silent> / :call fzf#run({
+nnoremap <silent> <Leader>l :call fzf#run({
 \   'source':      BufGet(),
 \   'sink':        function('LineOpen'),
 \   'options':     '+m',
