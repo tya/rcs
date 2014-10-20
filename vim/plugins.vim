@@ -123,7 +123,7 @@ nnoremap <Leader>t :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
 " fzf
-nnoremap <silent> <Leader>f :FZF
+nnoremap <silent> <Leader>f :FZF<CR>
 " List of buffers
 function! BufList()
   redir => ls
