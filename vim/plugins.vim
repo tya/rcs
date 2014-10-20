@@ -96,8 +96,8 @@ nnoremap <Leader>gv :Gitv --all<CR>
 nnoremap <Leader>gV :Gitv! --all<CR>
 
 " ctlrsf
-nnoremap <Leader>fo :CtrlSFOpen<CR>
-nnoremap <Leader>ff :CtrlSF --ignore tags<Space>
+nnoremap <Leader>so :CtrlSFOpen<CR>
+nnoremap <Leader>sf :CtrlSF --ignore tags<Space>
 
 " syntastic
 nnoremap <Leader>sc :SyntasticCheck<CR>:Errors<CR>:lclose<CR>
@@ -123,7 +123,7 @@ nnoremap <Leader>t :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 
 " fzf
-nnoremap <silent> <Leader>f :FZF<Space>
+nnoremap <silent> <Leader>f :FZF
 " List of buffers
 function! BufList()
   redir => ls
