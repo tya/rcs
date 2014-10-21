@@ -1,7 +1,8 @@
-let $VIMHOME = $HOME."/.vim"
 let $CONFIGHOME = $HOME."/rcs"
-source $VIMHOME/global.vim
-source $VIMHOME/plugins.vim
+source $CONFIGHOME/vim/manager.vim
+source $CONFIGHOME/vim/common.vim
+source $CONFIGHOME/vim/unix.vim
+source $CONFIGHOME/vim/plugins.vim
 if filereadable(expand("~/vimrc.local"))
     source ~/vimrc.local
 endif

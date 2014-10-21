@@ -1,37 +1,3 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !mkdir -p ~/.vim/autoload
-  silent !curl -fLo ~/.vim/autoload/plug.vim
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall
-endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'Raimondi/delimitMate'
-Plug 'Yggdroot/indentLine'
-Plug 'altercation/vim-colors-solarized'
-Plug 'bling/vim-airline'
-Plug 'ervandew/supertab'
-Plug 'dyng/ctrlsf.vim'
-Plug 'gorkunov/smartpairs.vim'
-Plug 'gregsexton/gitv', { 'on': 'Gitv' }
-Plug 'jeetsukumaran/vim-filebeagle'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
-Plug 'majutsushi/tagbar'
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
-Plug 'scrooloose/syntastic'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-surround'
-Plug 'wellle/targets.vim'
-
-call plug#end()
-
 " Syntax related stuff
 syntax on
 set autoindent
@@ -146,23 +112,7 @@ nnoremap k gk
 " reselect the text that was pasted so I can perform commands
 nnoremap <Leader>p V`]
 
-" open up vimrc files in a new vertical window
-nnoremap <Leader>eg <C-w><C-v><C-l>:e $CONFIGHOME/vim/global.vim <CR>
-nnoremap <Leader>ep <C-w><C-v><C-l>:e $CONFIGHOME/vim/plugins.vim <CR>
-if filereadable(expand("~/vimrc.local"))
-    nnoremap <Leader>ev <C-w><C-v><C-l>:e ~/vimrc.local<CR>
-endif
-if filereadable(expand("~/.bashrc"))
-    nnoremap <Leader>eb <C-w><C-v><C-l>:e $CONFIGHOME/configs/bashrc <CR>
-endif
-if filereadable(expand("~/.tmux.conf"))
-    nnoremap <Leader>et <C-w><C-v><C-l>:e $CONFIGHOME/configs/tmux.conf <CR>
-endif
-
-if filereadable(expand("~/bashrc.local"))
-    nnoremap <Leader>el <C-w><C-v><C-l>:e ~/bashrc.local<CR>
-endif
-
+nnoremap <Leader>ec <C-w><C-v><C-l>:e $CONFIGHOME/vim/common.vim <CR>
 " source and reloads the saved
 nnoremap <Leader>r :source $MYVIMRC <CR>
 
@@ -197,23 +147,6 @@ nnoremap g, g,zz
 set background=dark
 " set background=light
 colorscheme solarized
-if has('gui_running')
-    set guioptions-=m
-    set guioptions-=T
-    set guioptions-=l
-    set guioptions-=L
-    set guioptions-=r
-    set guioptions-=R
-    set guioptions-=b
-    set guioptions-=B
-    set guifont=Inconsolata-g\ 11
-else
-    set t_Co=256
-    let g:solarized_termtrans=1
-    let g:solarized_contrast="normal"
-    let g:solarized_visibility="normal"
-    let g:solarized_termcolors=256
-endif
 
 " Resize splits when the window is resized
 au VimResized * exe "normal! \<C-w>="
