@@ -3,6 +3,7 @@ let $VIMLOCAL = $HOME."/vimrc.local"
 source $CONFIGHOME/vim/winmanager.vim
 source $CONFIGHOME/vim/common.vim
 source $CONFIGHOME/vim/windows.vim
+source $CONFIGHOME/vim/plugincommon.vim
 source $CONFIGHOME/vim/winplugins.vim
 if filereadable($VIMLOCAL)
     source $VIMLOCAL

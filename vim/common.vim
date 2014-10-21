@@ -112,7 +112,6 @@ nnoremap k gk
 " reselect the text that was pasted so I can perform commands
 nnoremap <Leader>p V`]
 
-nnoremap <Leader>ec <C-w><C-v><C-l>:e $CONFIGHOME/vim/common.vim <CR>
 " source and reloads the saved
 nnoremap <Leader>r :source $MYVIMRC <CR>
 

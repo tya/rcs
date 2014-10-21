@@ -1,11 +1,3 @@
-" Open up config files in a new vertical window
-nnoremap <Leader>em <C-w><C-v><C-l>:e $CONFIGHOME/vim/winmanager.vim <CR>
-nnoremap <Leader>ew <C-w><C-v><C-l>:e $CONFIGHOME/windows.vim <CR>
-nnoremap <Leader>ep <C-w><C-v><C-l>:e $CONFIGHOME/winplugins.vim <CR>
-if filereadable($VIMLOCAL)
-    nnoremap <Leader>ev <C-w><C-v><C-l>:e $VIMLOCAL<CR>
-endif
-
 " gui stuff
 if has('gui_running')
     colorscheme solarized
