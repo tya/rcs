@@ -8,10 +8,10 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'Raimondi/delimitMate'
-Plug 'Shougo/neocomplete.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
+Plug 'ervandew/supertab'
 Plug 'dyng/ctrlsf.vim'
 Plug 'gorkunov/smartpairs.vim'
 Plug 'gregsexton/gitv', { 'on': 'Gitv' }
