@@ -10,7 +10,6 @@ rm -rf ~/vim
 mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
 ln -sf $CFG/vim/vimrc.vim ~/.vimrc
-ln -sf $CFG/vim/*.vim ~/vim/.
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp $CFG/vim/vimrc.local ~/vimrc.local
 
@@ -21,7 +20,6 @@ ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
 ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
 cp $CFG/configs/vimperatorrc.local ~/vimperatorrc.local
 ln -sf $CFG/configs/gitconfig ~/.gitconfig
-ln -sf $CFG/configs/gitignore_global ~/.gitignore_global
 cp $CFG/configs/gitconfig.local ~/gitconfig.local
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
