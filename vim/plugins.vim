@@ -3,9 +3,10 @@ nnoremap <Leader>so :CtrlSFOpen<CR>
 nnoremap <Leader>sf :CtrlSF --ignore tags<Space>
 
 " syntastic
-nnoremap <Leader>sc :SyntasticCheck<CR>:Errors<CR>:lclose<CR>
+nnoremap <Leader>sc :SyntasticCheck<CR>
 nnoremap <Leader>sr :SyntasticReset<CR>
 let g:synastic_auto_loc_list = 1
+let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_mode_map = {'mode': 'passive',
             \'active_filetypes': [],
             \'passive_filetypes': []}
