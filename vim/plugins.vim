@@ -11,6 +11,9 @@ let g:syntastic_mode_map = {'mode': 'passive',
             \'active_filetypes': [],
             \'passive_filetypes': []}
 
+" tagbar
+nnoremap <Leader>t :TagbarToggle<CR>
+
 " fzf
 nnoremap <silent> <Leader>f :FZF<CR>
 " List of buffers
@@ -31,7 +34,6 @@ nnoremap <silent> <Leader>b :call fzf#run({
 \   'options':     '+m',
 \   'tmux_height': '40%'
 \ })<CR>
-
 
 " Search current buffer
 function! BufGet()
