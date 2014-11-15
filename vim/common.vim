@@ -52,6 +52,7 @@ set winaltkeys=no
 set autoread
 set fileformats+=mac
 set foldmethod=indent
+set nofoldenable
 
 " turn off annoying visual and audible bell
 set noeb vb t_vb=
