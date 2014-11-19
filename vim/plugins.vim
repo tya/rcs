@@ -13,6 +13,7 @@ let g:syntastic_mode_map = {'mode': 'passive',
 
 " tagbar
 nnoremap <Leader>t :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
 
 " fzf
 nnoremap <silent> <Leader>f :FZF<CR>
