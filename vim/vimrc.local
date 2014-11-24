@@ -3,7 +3,7 @@
 " set shiftwidth=4
 " set shiftround
 " set softtabstop=4
-" set expandtab
+set expandtab
 " set smarttab
 
 " Copy and paste
