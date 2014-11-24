@@ -26,6 +26,11 @@ set backspace=indent,eol,start
 set nrformats-=octal
 set display+=lastline
 
+" tab stuff
+set shiftround
+set smarttab
+set expandtab
+
 " set numbering
 " set relativenumber
 set number

@@ -1,10 +1,7 @@
 " Tab settings
 " set tabstop=4
 " set shiftwidth=4
-" set shiftround
 " set softtabstop=4
-set expandtab
-" set smarttab
 
 " Copy and paste
  set clipboard=unammed
