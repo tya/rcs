@@ -70,6 +70,7 @@ cmap w!! w !sudo tee % >/dev/null
 
 " change the leader key
 let mapleader=','
+noremap \ ,
 
 " tame searching/moving
 nnoremap / /\v
