@@ -26,6 +26,7 @@ rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
 ln -sf $CFG/configs/Xresources ~/.Xresources
 ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
+ln -sf $CFG/configs/ctags ~/.ctags
 
 # if [[ $platform == 'linux' ]]; then
 ln -sf $CFG/configs/slate ~/.slate
