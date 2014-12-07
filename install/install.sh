@@ -11,6 +11,7 @@ mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
 ln -sf $CFG/vim/vimrc.vim ~/.vimrc
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ln -sf $CFG/emacs/init.el ~/.emacs.d/.
 cp $CFG/vim/vimrc.local ~/vimrc.local
 
 ln -sf $CFG/configs/bashrc ~/.bashrc
