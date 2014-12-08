@@ -12,7 +12,7 @@ let g:syntastic_mode_map = {'mode': 'passive',
             \'passive_filetypes': []}
 
 " tagbar
-nnoremap <Leader>t :TagbarToggle<CR>
+nnoremap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
 " fzf
