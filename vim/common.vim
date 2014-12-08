@@ -86,7 +86,7 @@ set hlsearch
 nnoremap <Leader><space> :noh<cr>
 
 " pasting large amount of text no need to autoindent
-set pastetoggle=<Leader>tp
+set pastetoggle=<Leader>pt
 set mouse=a
 
 " handle long lines correctly
@@ -118,14 +118,14 @@ nnoremap j gj
 nnoremap k gk
 
 " reselect the text that was pasted so I can perform commands
-nnoremap <Leader>p V`]
+nnoremap <Leader>pr V`]
 
 " source and reloads the saved
-nnoremap <Leader>r :source $MYVIMRC <CR>
+nnoremap <Leader>rc :source $MYVIMRC <CR>
 
 " working with split windows
-nnoremap <Leader>l <C-w>v<C-w>l
-nnoremap <Leader>j <C-w>s<C-w>j
+nnoremap <Leader>\ <C-w>v<C-w>l
+nnoremap <Leader>- <C-w>s<C-w>j
 
 " split navigation
 nnoremap <C-h> <C-w>h
@@ -159,7 +159,7 @@ colorscheme solarized
 au VimResized * exe "normal! \<C-w>="
 
 " remap visual block selection"
-nnoremap <leader>v <C-V>
+nnoremap <Leader>vb <C-V>
 
 " make sure status line is always shown as the second last line / also requires for powerline
 set laststatus=2
@@ -178,7 +178,8 @@ autocmd BufRead,BufWritePre,FileWritePre * silent! %s/[\r \t]\+$//
  autocmd CursorMovedI * if pumvisible() == 0|silent! pclose|endif
  autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
-nnoremap <leader>w :silent !xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR><CR>
+nnoremap <Leader>wl :silent !xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR><CR>
+nnoremap <Leader>wm :silent !open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR><CR>
 
 " status line
 " set laststatus=2
@@ -264,8 +265,8 @@ function! WindowSwapToggle()
 endfunction
 nnoremap <Space> :call WindowSwapToggle()<CR>
 
-" maximizing current buffer by open it in aother tab
-nmap <Leader>z :tabedit %<CR>
+" maximizing current buffer by open it in another tab
+nmap <Leader>zi :tabedit %<CR>
 
 function! DeleteEmptyBuffers()
     let [i, n; empty] = [1, bufnr('$')]
@@ -280,7 +281,7 @@ function! DeleteEmptyBuffers()
     endif
 endfunction
 
-nmap <Leader>c :call DeleteEmptyBuffers()<CR>
+nmap <Leader>de :call DeleteEmptyBuffers()<CR>
 
 " get rid of that annoying Ex
 map Q @@

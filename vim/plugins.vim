@@ -11,12 +11,16 @@ let g:syntastic_mode_map = {'mode': 'passive',
             \'active_filetypes': [],
             \'passive_filetypes': []}
 
+" dispatch
+nnoremap <Leader>dp :Dispatch<Space>
+nnoremap <Leader>dq :Dispatch!<Space>
+
 " tagbar
 nnoremap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
 " fzf
-nnoremap <silent> <Leader>f :FZF<CR>
+nnoremap <silent> <Leader>fo :FZF<CR>
 " List of buffers
 function! BufList()
   redir => ls
@@ -29,7 +33,7 @@ function! BufOpen(e)
   execute 'buffer '. matchstr(a:e, '^[ 0-9]*')
 endfunction
 
-nnoremap <silent> <Leader>b :call fzf#run({
+nnoremap <silent> <Leader>bo :call fzf#run({
 \   'source':      reverse(BufList()),
 \   'sink':        function('BufOpen'),
 \   'options':     '+m',
@@ -45,7 +49,7 @@ function! LineOpen(e)
   execute 'normal! '. matchstr(a:e, '[0-9]\+'). 'G'
 endfunction
 
-nnoremap <silent> ? :call fzf#run({
+nnoremap <silent> <Leader>lo :call fzf#run({
 \   'source':      BufGet(),
 \   'sink':        function('LineOpen'),
 \   'options':     '+m',

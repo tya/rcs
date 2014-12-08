@@ -1,6 +1,6 @@
 " Ctrlp
 let g:ctrlp_switch_buffer = 'et'
-nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>bo :CtrlPBuffer<CR>
 nnoremap <Leader>cp :CtrlP<Space>
 let g:ctrlp_custom_ignore = {
             \ 'dir': '\v[\/]\.(git|hg|svn)$',
