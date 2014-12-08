@@ -46,7 +46,7 @@ set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest
 set wildignore+=*.swp,*bak,*.pyc,*.class
 set wildignore+=*.aux,*.out,*.toc
 set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg
-set synmaxcol=800
+set synmaxcol=120
 set title
 set nobackup
 set noswapfile
