@@ -59,4 +59,4 @@ endfunction
 nnoremap <silent> <Leader>to :call fzf#run({
 \   'source'     : TagCommand(),
 \   'sink'       : 'tag',
-\   })
+\   })<CR>
