@@ -53,7 +53,8 @@ nnoremap <silent> <Leader>lo :call fzf#run({
 \ })<CR>
 
 function! TagCommand()
-  return substitute('awk _{ print toupper($4),$1,$2,$3 }_ ', '_', "'", 'g')
+  " return substitute('awk _{ print toupper($4),$1,$2,$3 }_ ', '_', "'", 'g')
+  return substitute('awk _{ print $1 }_ ', '_', "'", 'g')
               \ . join(tagfiles(), ' ')
 endfunction
 nnoremap <silent> <Leader>to :call fzf#run({
