@@ -56,7 +56,7 @@ function! TagCommand()
   return substitute('awk _{ print toupper($4),$1,$2,$3 }_ ', '_', "'", 'g')
               \ . join(tagfiles(), ' ')
 endfunction
-command! FZFTag call fzf#run({
+nnoremap <silent> <Leader>to :call fzf#run({
 \   'source'     : TagCommand(),
 \   'sink'       : 'tag',
 \   })
