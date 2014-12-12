@@ -16,9 +16,6 @@
     editor = vim -f
     excludesfile = ~/rcs/configs/gitignore
 
-[diff]
-    tool = icdiff
-
 [merge]
     tool = vimdiff
 
