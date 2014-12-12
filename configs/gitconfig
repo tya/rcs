@@ -10,16 +10,17 @@
     ui = true
     pager = true
 
-
 [core]
     pager = less -S
     filemode = false
     editor = vim -f
     excludesfile = ~/rcs/configs/gitignore
 
+[diff]
+    tool = icdiff
+
 [merge]
     tool = vimdiff
-
 
 [alias]
     type = cat-file -t
