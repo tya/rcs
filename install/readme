@@ -1,3 +1,14 @@
+# Things needed before running install scripts
+git
+ctags
+silver searcher
+tmux
+curl
+rainbarf
+
+# if running into pink urxvt
+remove -noccp around line 42 in /usr/sbin/lightdm-session
+
 #install vim instructions
 sudo apt-get install libgnome2-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev libperl-dev
 
@@ -23,7 +34,3 @@ homebrew install coreutils iterm2
 xbindkeys wmctrl zenity
 xbindkeys -f keys.rc
 xclip for tmux-yank
-
-#common
-rainbarf
-tmux

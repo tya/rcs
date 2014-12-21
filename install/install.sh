@@ -8,8 +8,11 @@ fi
 CFG=~/rcs
 rm -rf ~/vim
 mkdir -p ~/vim
+mkdir -p ~/.emacs.d
 ln -sf ~/vim ~/.vim
+ln -sf ~/vim ~/.nvim
 ln -sf $CFG/vim/vimrc.vim ~/.vimrc
+ln -sf $CFG/vim/vimrc.vim ~/.nvimrc
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sf $CFG/emacs/init.el ~/.emacs.d/.
 cp $CFG/vim/vimrc.local ~/vimrc.local
