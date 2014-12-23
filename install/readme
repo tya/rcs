@@ -30,5 +30,5 @@ slate alfred
 cVim chrome
 homebrew install coreutils iterm2
 
-need xsel for nvim clipboard python support
+need xsel for nvim clipboard support
 xclip for tmux-yank
