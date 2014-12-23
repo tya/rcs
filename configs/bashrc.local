@@ -13,9 +13,6 @@ alias play='cd $SB'
 alias cfg='cd $CH'
 alias rep='cd $REP'
 
-# linux
-# xbindkeys -f $CH/config/keys.rc
-
 # mac
 # alias vim="`brew --prefix`/bin/vim"
 # alias ctags="`brew --prefix`/bin/ctags"

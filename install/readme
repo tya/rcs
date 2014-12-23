@@ -12,23 +12,26 @@ remove -noccp around line 42 in /usr/sbin/lightdm-session
 #install vim instructions
 sudo apt-get install libgnome2-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev libperl-dev
 
-sudo apt-get install python-dev libncurses5-dev ruby ruby-dev
+sudo apt-get install python-dev libncurses5-dev ruby ruby-dev lua liblua-dev
 
 ./configure --with-features=huge \
             --enable-rubyinterp \
             --enable-pythoninterp \
-            --with-python-config-dir=/usr/lib/python2.7-config \
-            --enable-perlinterp \
-            --enable-gui=gtk2 --enable-cscope --prefix=/usr \
             --enable-luainterp \
+            --enable-perlinterp \
+            --with-python-config-dir=/usr/lib/python2.7-config \
+            --enable-gui=gtk2 --enable-cscope \
+            --prefix=/usr \
             --with-lua-prefix=/usr/local
-            --prefix=$directory
 #mac
 rvm system
 brew install vim --with-features=huge --with-cscope --with-lua --with-python --with-perl --with-ruby
 slate alfred
 cVim chrome
 homebrew install coreutils iterm2
+
+# nvim
+need xsel for clipboard python support
 
 #linux
 xbindkeys wmctrl zenity
