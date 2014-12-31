@@ -1,6 +1,9 @@
 " ctlrsf
 nnoremap <Leader>so :CtrlSFOpen<CR>
 nnoremap <Leader>sf :CtrlSF --ignore tags<Space>
+" gsearch
+let g:gsearch_ctrlsf_command = 'CtrlSF --ignore tags'
+map g/ <Plug>(operator-ctrlsf)
 
 " syntastic
 nnoremap <Leader>sc :SyntasticCheck<CR>

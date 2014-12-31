@@ -7,10 +7,10 @@ Plug 'gorkunov/smartpairs.vim'
 Plug 'gregsexton/gitv', { 'on': 'Gitv' }
 Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
 Plug 'tommcdo/vim-exchange'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
