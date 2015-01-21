@@ -1,6 +1,3 @@
-" supertab
-let g:SuperTabDefaultCompletionType = "context"
-
 " Filebeagle
 let g:filebeagle_suppress_keymaps = 1
 map <silent> <Leader>wd <Plug>FileBeagleOpenCurrentWorkingDir
