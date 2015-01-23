@@ -6,12 +6,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+Plug 'benekastah/neomake'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'kana/vim-operator-user'
 Plug 'majutsushi/tagbar'
 Plug 'rgrinberg/vim-operator-gsearch'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-dispatch'
 source $CONFIGHOME/vim/managercommon.vim
 call plug#end()

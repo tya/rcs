@@ -5,15 +5,6 @@ nnoremap <Leader>sf :CtrlSF --ignore tags<Space>
 let g:gsearch_ctrlsf_command = 'CtrlSF --ignore tags'
 map g/ <Plug>(operator-ctrlsf)
 
-" syntastic
-nnoremap <Leader>sc :SyntasticCheck<CR>
-nnoremap <Leader>sr :SyntasticReset<CR>
-let g:synastic_auto_loc_list = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_mode_map = {'mode': 'passive',
-            \'active_filetypes': [],
-            \'passive_filetypes': []}
-
 " dispatch
 nnoremap <Leader>dp :Dispatch<Space>
 nnoremap <Leader>dq :Dispatch!<Space>
