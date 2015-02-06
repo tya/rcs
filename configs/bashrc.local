@@ -20,4 +20,5 @@ alias rep='cd $REP'
 # export GOPATH=$PH/go
 # PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH:$GOPATH/bin"
 # MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
+# PERL_MB_OPT="--install_base \"/home/hd/perl5\""; export PERL_MB_OPT;
+# PERL_MM_OPT="INSTALL_BASE=/home/hd/perl5"; export PERL_MM_OPT;
