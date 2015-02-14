@@ -20,7 +20,7 @@ set hidden
 set wildmenu
 set wildmode=list:longest,full
 set cursorline
-set ttyfast
+" set ttyfast
 set ruler
 set backspace=indent,eol,start
 set nrformats-=octal
