@@ -286,3 +286,5 @@ nmap <Leader>de :call DeleteEmptyBuffers()<CR>
 " get rid of that annoying Ex
 map Q @@
 map q: :q
+
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()

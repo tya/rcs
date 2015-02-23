@@ -16,3 +16,6 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 
 " delmimitMate
 imap <C-f> <Plug>delimitMateJumpMany
+
+" hardmode
+nnoremap <leader>hm <Esc>:call ToggleHardMode()<CR>
