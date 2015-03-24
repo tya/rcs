@@ -1,4 +1,5 @@
 set hintchars=hjklasdf
+set gui=nonavigation
 
 nnoremap j 7j
 nnoremap k 7k
