@@ -154,6 +154,7 @@ nnoremap g, g,zz
 set background=dark
 " set background=light
 colorscheme solarized
+highlight clear SignColumn
 
 " Resize splits when the window is resized
 au VimResized * exe "normal! \<C-w>="
@@ -288,3 +289,6 @@ map Q @@
 map q: :q
 
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
+" unplace all signs
+map <Leader>us :sign unplace *<CR>
