@@ -1,5 +1,6 @@
 set hintchars=hjklasdf
 set gui=nonavigation
+set focuscontent
 
 nnoremap j 7j
 nnoremap k 7k

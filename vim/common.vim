@@ -103,9 +103,9 @@ endif
 
 " show hidden characters
 set list
-set showbreak=↪
+let &showbreak='+++ '
 if &listchars ==# 'eol:$'
-    set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+    set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:%
 endif
 
 set iskeyword+=_,$,@,%,#
