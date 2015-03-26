@@ -105,7 +105,7 @@ endif
 set list
 let &showbreak='+++ '
 if &listchars ==# 'eol:$'
-    set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:%
+    set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
 endif
 
 set iskeyword+=_,$,@,%,#
