@@ -13,6 +13,7 @@ nnoremap <Leader>dq :Dispatch!<Space>
 " tagbar
 nnoremap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
+let g:tabgar_autoclose = 1
 
 " fzf
 nnoremap <silent> <Leader>fo :FZF<CR>
