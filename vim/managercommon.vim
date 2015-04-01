@@ -6,6 +6,7 @@ Plug 'bling/vim-airline'
 Plug 'hvdang/hardmode'
 Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
+Plug 'mtth/scratch.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
