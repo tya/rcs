@@ -289,3 +289,8 @@ autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 " unplace all signs
 map <Leader>us :sign unplace *<CR>
+
+" Work around for wrong terminfo in nvim
+if has('nvim')
+    nmap <BS> <C-W>h
+endif

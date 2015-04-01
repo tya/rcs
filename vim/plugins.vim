@@ -1,6 +1,7 @@
 " ctlrsf
 nnoremap <Leader>so :CtrlSFOpen<CR>
 nnoremap <Leader>sf :CtrlSF --ignore tags<Space>
+
 " gsearch
 let g:gsearch_ctrlsf_command = 'CtrlSF --ignore tags'
 map g/ <Plug>(operator-ctrlsf)
@@ -42,6 +43,21 @@ endfunction
 nnoremap <silent> <Leader>lo :call fzf#run({
 \   'source':      BufGet(),
 \   'sink':        function('LineOpen'),
+\   'options':     '+m',
+\   'tmux_height': '40%'
+\ })<CR>
+
+" Jump to tags
+command! FZFTag if !empty(tagfiles()) | call fzf#run({
+\   'source':      "sed '/^\\!/d;s/\t.*//' " . join(tagfiles()) . ' | uniq',
+\   'sink':        'tag',
+\   'options':     '+m',
+\   'tmux_height': '40%'
+\ }) | else | echo 'No tags' | endif
+
+" fzf in a tab
+nnoremap <silent> <Leader>ft :call fzf#run({
+\   'sink':        'tabe',
 \   'options':     '+m',
 \   'tmux_height': '40%'
 \ })<CR>
