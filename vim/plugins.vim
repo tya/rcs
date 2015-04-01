@@ -54,6 +54,7 @@ command! FZFTag if !empty(tagfiles()) | call fzf#run({
 \   'options':     '+m',
 \   'tmux_height': '40%'
 \ }) | else | echo 'No tags' | endif
+nnoremap <silent> <Leader>fj :FZFTag<CR>
 
 " fzf in a tab
 nnoremap <silent> <Leader>ft :call fzf#run({
