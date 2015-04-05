@@ -291,6 +291,8 @@ autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 map <Leader>us :sign unplace *<CR>
 
 " Work around for wrong terminfo in nvim
+" and remap to escape when in terminal mode
 if has('nvim')
     nmap <BS> <C-W>h
+    tnoremap <Esc> <C-\><C-n>
 endif
