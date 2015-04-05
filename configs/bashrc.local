@@ -6,18 +6,21 @@ export DL=$HOME/downloads
 export SB=$HOME/sandbox
 export CH=$HOME/rcs
 export REP=$HOME/sandbox/repos
+export GOPATH=$PH/go
 
 alias work='cd $PH'
 alias dl='cd $DL'
 alias play='cd $SB'
 alias cfg='cd $CH'
 alias rep='cd $REP'
+alias gosg='cd $GOPATH/src/github.com/sendgrid'
+alias gosr='cd $GOPATH/src/'
+alias gogh='cd $GOPATH/src/github.com'
 
 # mac
 # alias vim="`brew --prefix`/bin/vim"
 # alias ctags="`brew --prefix`/bin/ctags"
 
-# export GOPATH=$PH/go
 # PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH:$GOPATH/bin"
 # MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 # PERL_MB_OPT="--install_base \"/home/hd/perl5\""; export PERL_MB_OPT;
