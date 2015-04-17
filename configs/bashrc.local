@@ -1,6 +1,6 @@
 # vim: set ft=sh:
 export TERM=screen-256color
-export PH=$HOME/projects/
+export PH=$HOME/projects
 export PT=$HOME/projects/todo
 export DL=$HOME/downloads
 export SB=$HOME/sandbox

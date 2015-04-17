@@ -8,6 +8,7 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'benekastah/neomake'
 Plug 'dyng/ctrlsf.vim'
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'kana/vim-operator-user'
 Plug 'majutsushi/tagbar'
