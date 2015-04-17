@@ -294,5 +294,8 @@ map <Leader>us :sign unplace *<CR>
 " and remap to escape when in terminal mode
 if has('nvim')
     nmap <BS> <C-W>h
-    tnoremap <Esc> <C-\><C-n>
+    " tnoremap <Esc> <C-\><C-n>
 endif
+
+" Yank full path of current buffer
+nnoremap <silent> <leader>yp :let @+ = expand("%:p")<CR>
