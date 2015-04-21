@@ -28,7 +28,7 @@ endfunction
 nmap <leader>ro :call Ranger()<CR>
 
 function! RangerOpen()
-  let filename = @+
+  let filename = @*
   exec 'edit ' . filename
 endfunction
 nmap <leader>re :call RangerOpen()<CR>
