@@ -1,8 +1,3 @@
-" Filebeagle
-let g:filebeagle_suppress_keymaps = 1
-map <silent> <Leader>wd <Plug>FileBeagleOpenCurrentWorkingDir
-map <silent> - <Plug>FileBeagleOpenCurrentBufferDir
-
 " fugitive
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
