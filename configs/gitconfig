@@ -20,8 +20,8 @@
     prompt = true
 [diff]
     tool = vimdiff
-[difftool "vimdiff"]
-    cmd = "vim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
+; [difftool "vimdiff"]
+;     cmd = "vim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
 
 [merge]
     tool = vimdiff
