@@ -16,6 +16,13 @@
     editor = vim -f
     excludesfile = ~/rcs/configs/gitignore
 
+[difftool]
+    prompt = true
+[diff]
+    tool = vimdiff
+[difftool "vimdiff"]
+    cmd = "vim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
+
 [merge]
     tool = vimdiff
 
