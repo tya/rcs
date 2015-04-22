@@ -47,6 +47,7 @@ need xsel for nvim clipboard support
 xclip for tmux-yank
 
 # ranger
+brew install libcaca --with-imlib2
 modify rc.conf
 shell -d printf %d/%f | pbcopy if mac
 or
