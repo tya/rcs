@@ -29,8 +29,6 @@ cp $CFG/configs/gitconfig.local ~/gitconfig.local
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
 
-ln -sf $CFG/configs/xinitrc ~/.xinitrc
-ln -sf $CFG/configs/xinitrc ~/.xsession
 ln -sf $CFG/configs/Xresources ~/.Xresources
 
 ln -sf $CFG/configs/tmux.conf ~/.tmux.conf

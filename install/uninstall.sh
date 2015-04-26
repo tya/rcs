@@ -23,8 +23,6 @@ rm ~/.vimrc
 rm ~/.ctags
 
 rm ~/.Xresources
-rm ~/.xinitrc
-rm ~/.xsession
 
 rm -rf ~/.tmux
 
