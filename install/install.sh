@@ -18,19 +18,29 @@ cp $CFG/vim/vimrc.local ~/vimrc.local
 ln -sf $CFG/configs/bashrc ~/.bashrc
 ln -sf $CFG/configs/bash_profile ~/.bash_profile
 cp $CFG/configs/bashrc.local ~/bashrc.local
+
 ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
 ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
 cp $CFG/configs/vimperatorrc.local ~/vimperatorrc.local
+
 ln -sf $CFG/configs/gitconfig ~/.gitconfig
 cp $CFG/configs/gitconfig.local ~/gitconfig.local
+
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts
+
 ln -sf $CFG/configs/Xresources ~/.Xresources
+
 ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
+
 ln -sf $CFG/configs/ctags ~/.ctags
 
 # if [[ $platform == 'linux' ]]; then
 ln -sf $CFG/configs/slate ~/.slate
+
+ln -sf $CFG/configs/i3status.conf ~/.i3status.conf
+mkdir -p ~/.i3
+ln -sf $CFG/configs/i3.conf ~/.i3/conf
 
 mkdir -p ~/projects/notes
 mkdir -p ~/sandbox/repos
