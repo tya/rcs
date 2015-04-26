@@ -17,6 +17,7 @@ let g:tagbar_autofocus = 1
 
 " ranger
 function! Ranger()
+  let curpwd = getcwd()
   exec 'silent lcd %:p:h'
   if has('nvim')
     exec 'silent term ranger'
@@ -24,6 +25,7 @@ function! Ranger()
     exec 'silent !ranger'
   endif
   redraw!
+  exec 'silent lcd ' . curpwd
 endfunction
 nmap <leader>ro :call Ranger()<CR>
 
