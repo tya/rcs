@@ -54,3 +54,6 @@ modify rc.conf
 shell -d printf %d/%f | pbcopy if mac
 or
 shell -d echo -n %d/%f | xsel -i
+
+# window
+AutoHotkey to remap keys
