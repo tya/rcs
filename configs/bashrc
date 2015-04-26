@@ -33,9 +33,9 @@ bind 'set completion-ignore-case on'
 #   - Exit if there's no match (--exit-0)
 # switch session
 
-export FZF_DEFAULT_COMMAND='
-  (git ls-tree -r --name-only HEAD ||
-   find * -name ".*" -prune -o -type f -print -o -type l -print) 2> /dev/null'
+# export FZF_DEFAULT_COMMAND='
+#   (git ls-tree -r --name-only HEAD ||
+#    find * -name ".*" -prune -o -type f -print -o -type l -print) 2> /dev/null'
 
 fs() {
   local session
@@ -87,20 +87,29 @@ fda() {
 }
 
 # Git
-fbr() {
-    local branches branch
-    branches=$(git branch) &&
-      branch=$(echo "$branches" | fzf +s +m) &&
-      git checkout $(echo "$branch" | sed "s/.* //")
+# fco - checkout git branch/tag
+fco() {
+  local tags branches target
+  tags=$(
+    git tag | awk '{print "\x1b[31;1mtag\x1b[m\t" $1}') || return
+  branches=$(
+    git branch --all | grep -v HEAD             |
+    sed "s/.* //"    | sed "s#remotes/[^/]*/##" |
+    sort -u          | awk '{print "\x1b[34;1mbranch\x1b[m\t" $1}') || return
+  target=$(
+    (echo "$tags"; echo "$branches") |
+    fzf-tmux -l30 -- --no-hscroll --ansi +m -d "\t" -n 2) || return
+  git checkout $(echo "$target" | awk '{print $2}')
 }
 
-# fco - checkout git commit
-fco() {
+# fcoc - checkout git commit
+fcoc() {
     local commits commit
     commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
         commit=$(echo "$commits" | fzf +s +m -e) &&
         git checkout $(echo "$commit" | sed "s/ .*//")
 }
+
 # fshow - git commit browser
 fshow() {
   local out sha q
