@@ -5,6 +5,8 @@ silver searcher
 tmux
 curl
 ranger
+i3
+quickswitch
 
 # if running into pink urxvt
 remove -noccp around line 42 in /usr/sbin/lightdm-session
@@ -42,11 +44,11 @@ alfred
 cVim chrome
 brew install coreutils iterm2
 
-# linux
+# linux vim copy and paste
 need xsel for nvim clipboard support
 xclip for tmux-yank
 
-# ranger
+# ranger on macs
 brew install libcaca --with-imlib2
 modify rc.conf
 shell -d printf %d/%f | pbcopy if mac
