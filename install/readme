@@ -5,8 +5,8 @@ silver searcher
 tmux
 curl
 ranger
-i3
-quickswitch
+dmenu
+wmctrl
 
 # if running into pink urxvt
 remove -noccp around line 42 in /usr/sbin/lightdm-session

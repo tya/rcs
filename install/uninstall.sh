@@ -27,6 +27,3 @@ rm ~/.Xresources
 rm -rf ~/.tmux
 
 rm ~/.slate
-
-rm ~/.i3status.conf
-rm -rf ~/.i3

@@ -38,10 +38,6 @@ ln -sf $CFG/configs/ctags ~/.ctags
 # if [[ $platform == 'linux' ]]; then
 ln -sf $CFG/configs/slate ~/.slate
 
-ln -sf $CFG/configs/i3status.conf ~/.i3status.conf
-mkdir -p ~/.i3
-ln -sf $CFG/configs/i3.conf ~/.i3/conf
-
 mkdir -p ~/projects/notes
 mkdir -p ~/sandbox/repos
 source ~/.bashrc
