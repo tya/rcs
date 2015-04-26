@@ -17,6 +17,8 @@ alias gosg='cd $GOPATH/src/github.com/sendgrid'
 alias gosr='cd $GOPATH/src/'
 alias gogh='cd $GOPATH/src/github.com'
 
+alias nocap='xmodmap $CH/configs/xmodmap'
+
 # mac
 # alias vim="`brew --prefix`/bin/vim"
 # alias ctags="`brew --prefix`/bin/ctags"
