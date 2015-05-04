@@ -2,6 +2,9 @@ set hintchars=hjklasdf
 set gui=nonavigation
 set focuscontent
 
+map , <Leader>
+
+nmap <Leader><Space> :noh<CR>
 nnoremap j 7j
 nnoremap k 7k
 
