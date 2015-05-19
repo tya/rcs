@@ -25,6 +25,7 @@ cp $CFG/configs/vimperatorrc.local ~/vimperatorrc.local
 
 ln -sf $CFG/configs/gitconfig ~/.gitconfig
 cp $CFG/configs/gitconfig.local ~/gitconfig.local
+ln -sf $CFG/configs/agignore ~/.agignore
 
 rm -rf ~/.fonts
 ln -sf $CFG/fonts ~/.fonts

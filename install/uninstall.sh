@@ -6,6 +6,7 @@ rm ~/.bash_profile
 rm ~/.gitconfig
 rm ~/gitconfig.local
 rm ~/.gitignore_global
+rm ~/.agignore
 
 rm ~/.tmux.conf
 
