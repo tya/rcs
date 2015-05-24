@@ -8,7 +8,8 @@ if has('gui_running')
     set guioptions-=R
     set guioptions-=b
     set guioptions-=B
-    set guifont=Inconsolata-g\ 11
+    " set guifont=Inconsolata-g\ 11
+    set guifont=SourceCodePro-Light\ 14
 else
     set t_Co=256
     let g:solarized_termtrans=1
