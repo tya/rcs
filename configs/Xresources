@@ -4,7 +4,6 @@ Xft*antialias: true
 Xft*rbga: rgb
 Xft*hinting: true
 Xft*hintstyle: hintslight
-/* URxvt*font: xft:Inconsolata\\-g:medium:size=14:antialias=true:hinting=true */
 URxvt*font: xft:SourceCodePro:light:size=14:antialias=true:hinting=true
 
 URxvt*transparent: false
