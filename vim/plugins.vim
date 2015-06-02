@@ -1,9 +1,9 @@
 " ctlrsf
 nnoremap <Leader>so :CtrlSFOpen<CR>
-nnoremap <Leader>sf :CtrlSF --ignore tags<Space>
+nnoremap <Leader>sf :CtrlSF<Space>
 
 " gsearch
-let g:gsearch_ctrlsf_command = 'CtrlSF --ignore tags'
+let g:gsearch_ctrlsf_command = 'CtrlSF'
 map g/ <Plug>(operator-ctrlsf)
 
 " dispatch
