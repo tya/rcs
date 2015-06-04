@@ -6,10 +6,6 @@ nnoremap <Leader>sf :CtrlSF<Space>
 let g:gsearch_ctrlsf_command = 'CtrlSF'
 map g/ <Plug>(operator-ctrlsf)
 
-" dispatch
-nnoremap <Leader>dp :Dispatch<Space>
-nnoremap <Leader>dq :Dispatch!<Space>
-
 " tagbar
 nnoremap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
