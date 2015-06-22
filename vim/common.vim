@@ -115,7 +115,7 @@ nnoremap j gj
 nnoremap k gk
 
 " reselect the text that was pasted so I can perform commands
-nnoremap <Leader>pr V`]
+nnoremap <Leader>vr V`]
 
 " source and reloads the saved
 nnoremap <Leader>rc :source $MYVIMRC <CR>
