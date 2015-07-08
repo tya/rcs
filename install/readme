@@ -1,4 +1,5 @@
 # Things needed before running install scripts
+# linux
 git
 ctags
 silver searcher
@@ -7,6 +8,7 @@ curl
 ranger
 dmenu
 wmctrl
+inotifywait?
 
 # if running into pink urxvt
 remove -noccp around line 42 in /usr/sbin/lightdm-session
@@ -32,10 +34,15 @@ ublock
 tile tabs
 vimperator
 Video DownloadHelper
+keefox
+
+#chrome
+one tab
 
 #mac
 brew
 cask
+fswatch
 # vim on mac
 rvm system
 brew install vim --with-features=huge --with-cscope --with-lua --with-python --with-perl --with-ruby
