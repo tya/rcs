@@ -3,6 +3,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'ajh17/VimCompletesMe'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
+Plug 'haya14busa/incsearch.vim'
 Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'

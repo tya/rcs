@@ -11,3 +11,8 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 
 " delmimitMate
 imap <C-f> <Plug>delimitMateJumpMany
+
+" incsearch
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+let g:incsearch#magic = '\v'

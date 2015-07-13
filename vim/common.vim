@@ -73,8 +73,8 @@ let mapleader=','
 noremap \ ,
 
 " tame searching/moving
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
@@ -135,7 +135,7 @@ cnoremap <C-j> <down>
 cnoremap <C-k> <up>
 
 " Open file under cursor in new tab
-nnoremap gF <C-w>gf
+" nnoremap gF <C-w>gf
 
 " Keep search matches in the middle of the window.
 nnoremap * *zzzv
@@ -294,7 +294,7 @@ map <Leader>us :sign unplace *<CR>
 " and remap to escape when in terminal mode
 if has('nvim')
     nmap <BS> <C-W>h
-    " tnoremap <Esc> <C-\><C-n>
+    tnoremap <Esc> <C-\><C-n>
 endif
 
 " Yank full path of current buffer

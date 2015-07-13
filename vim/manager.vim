@@ -11,6 +11,7 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'kana/vim-operator-user'
+Plug 'kopischke/vim-fetch'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'majutsushi/tagbar'
 Plug 'rgrinberg/vim-operator-gsearch'
