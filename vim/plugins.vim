@@ -1,10 +1,9 @@
 " ctlrsf
-nnoremap <Leader>so :CtrlSFOpen<CR>
-nnoremap <Leader>sf :CtrlSF<Space>
-
-" gsearch
-let g:gsearch_ctrlsf_command = 'CtrlSF'
-map g/ <Plug>(operator-ctrlsf)
+nnoremap <Leader>st :CtrlSFToggle<CR>
+nmap <Leader>sf <Plug>CtrlSFPrompt
+vmap <Leader>sv <Plug>CtrlSFVwordExec
+nmap <Leader>sw <Plug>CtrlSFCwordExec
+nmap <Leader>sn <Plug>CtrlSFPwordExec
 
 " tagbar
 nnoremap <Leader>tb :TagbarToggle<CR>

@@ -15,7 +15,6 @@ Plug 'kana/vim-operator-user'
 Plug 'kopischke/vim-fetch'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'majutsushi/tagbar'
-Plug 'rgrinberg/vim-operator-gsearch'
 source $CONFIGHOME/vim/managercommon.vim
 call plug#end()
 
