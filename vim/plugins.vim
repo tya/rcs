@@ -18,14 +18,14 @@ function! Ranger()
   let curpwd = getcwd()
   exec 'silent lcd %:p:h'
   if has('nvim')
-    exec 'silent term ranger'
+    exec 'silent tabe | term ranger'
   else
     exec 'silent !ranger'
   endif
   redraw!
   exec 'silent lcd ' . curpwd
 endfunction
-nmap <leader>ro :call Ranger()<CR>
+nmap <Leader>ro :call Ranger()<CR>
 
 function! RangerOpen()
   let filename = @*
