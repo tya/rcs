@@ -1,3 +1,6 @@
+"vim-go
+let g:go_fmt_fail_silently = 1
+
 " ctlrsf
 nnoremap <Leader>st :CtrlSFToggle<CR>
 nmap <Leader>sf <Plug>CtrlSFPrompt
@@ -31,7 +34,7 @@ endfunction
 nmap <leader>re :call RangerOpen()<CR>
 
 " fzf
-nnoremap <silent> <Leader>fo :FZF<CR>
+nnoremap <silent> <Leader>fo :FZF!<CR>
 " List of buffers
 function! BufList()
   redir => ls
@@ -42,11 +45,11 @@ endfunction
 function! BufOpen(e)
   execute 'buffer '. matchstr(a:e, '^[ 0-9]*')
 endfunction
+
 nnoremap <silent> <Leader>bo :call fzf#run({
-\   'source':      reverse(BufList()),
-\   'sink':        function('BufOpen'),
-\   'options':     '+m',
-\   'tmux_height': '40%'
+\   'source':  reverse(BufList()),
+\   'sink':    function('BufOpen'),
+\   'options': '+m',
 \ })<CR>
 
 " Search current buffer
@@ -57,17 +60,15 @@ function! LineOpen(e)
   execute 'normal! '. matchstr(a:e, '[0-9]\+'). 'G'
 endfunction
 nnoremap <silent> <Leader>lo :call fzf#run({
-\   'source':      BufGet(),
-\   'sink':        function('LineOpen'),
-\   'options':     '+m',
-\   'tmux_height': '40%'
+\   'source':  BufGet(),
+\   'sink':    function('LineOpen'),
+\   'options': '+m',
 \ })<CR>
 
 " Jump to tags
 command! FZFTag if !empty(tagfiles()) | call fzf#run({
-\   'source':      "sed '/^\\!/d;s/\t.*//' " . join(tagfiles()) . ' | uniq',
-\   'sink':        'tag',
-\   'options':     '+m',
-\   'tmux_height': '40%'
+\   'source':  "sed '/^\\!/d;s/\t.*//' " . join(tagfiles()) . ' | uniq',
+\   'sink':    'tag',
+\   'options': '+m',
 \ }) | else | echo 'No tags' | endif
 nnoremap <silent> <Leader>to :FZFTag<CR>

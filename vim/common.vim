@@ -117,7 +117,7 @@ nnoremap k gk
 " reselect the text that was pasted so I can perform commands
 nnoremap <Leader>vr V`]
 
-" source and reloads the saved
+" reload vim configs
 nnoremap <Leader>rc :source $MYVIMRC <CR>
 
 " working with split windows
@@ -154,7 +154,8 @@ colorscheme solarized
 highlight clear SignColumn
 
 " Resize splits when the window is resized
-au VimResized * exe "normal! \<C-w>="
+" au VimResized * exe "normal! \<C-w>="
+nnoremap <Leader>= <C-w>=
 
 " remap visual block selection"
 nnoremap <Leader>vb <C-V>
@@ -284,8 +285,6 @@ nmap <Leader>de :call DeleteEmptyBuffers()<CR>
 " get rid of that annoying Ex
 map Q @@
 map q: :q
-
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 " unplace all signs
 map <Leader>us :sign unplace *<CR>
