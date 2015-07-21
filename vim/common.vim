@@ -155,6 +155,7 @@ highlight clear SignColumn
 
 " Resize splits when the window is resized
 " au VimResized * exe "normal! \<C-w>="
+set noea
 nnoremap <Leader>= <C-w>=
 
 " remap visual block selection"
