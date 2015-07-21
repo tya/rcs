@@ -78,12 +78,12 @@ noremap \ ,
 set ignorecase
 set smartcase
 set gdefault
-set incsearch
+" set incsearch
 set showmatch
 set hlsearch
 
 " clear all searches with ,space
-nnoremap <Leader><space> :noh<cr>
+" nnoremap <Leader><space> :noh<cr>
 
 " pasting large amount of text no need to autoindent
 set pastetoggle=<Leader>pt
