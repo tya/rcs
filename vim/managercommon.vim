@@ -13,3 +13,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/scratch.vim'
+Plug 'wellle/targets.vim'
+Plug 'tommcdo/vim-exchange'
+

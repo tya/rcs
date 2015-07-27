@@ -155,7 +155,7 @@ highlight clear SignColumn
 
 " Resize splits when the window is resized
 " au VimResized * exe "normal! \<C-w>="
-set noea
+" set noea
 nnoremap <Leader>= <C-w>=
 nnoremap <C-u> :resize +1<CR>
 nnoremap <C-d> :resize -1<CR>
