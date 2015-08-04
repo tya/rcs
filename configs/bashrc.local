@@ -22,6 +22,13 @@ alias nocap='xmodmap $CH/configs/xmodmap'
 # mac
 # alias vim="`brew --prefix`/bin/vim"
 # alias ctags="`brew --prefix`/bin/ctags"
+# alias bs='eval "$(boot2docker shellinit)"'
+# eval "$(chef shell-init bash)"
+
+# hot fix for neovim tmux navigator
+# infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
+# tic $TERM.ti
+
 
 # PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH:$GOPATH/bin"
 # MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
