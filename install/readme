@@ -35,9 +35,7 @@ tile tabs
 vimperator
 Video DownloadHelper
 keefox
-
-#chrome
-one tab
+Magic Action
 
 #mac
 brew
@@ -63,4 +61,6 @@ or
 shell -d echo -n %d/%f | xsel -i
 
 # window
-AutoHotkey to remap keys
+AutoHotkey
+VueScan
+vimfiles

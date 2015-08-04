@@ -1,4 +1,4 @@
-let $CONFIGHOME = $HOME."/configs"
+let $CONFIGHOME = $HOME."/rcs"
 let $VIMLOCAL = $HOME."/vimrc.local"
 source $CONFIGHOME/vim/winmanager.vim
 source $CONFIGHOME/vim/common.vim
