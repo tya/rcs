@@ -7,6 +7,14 @@
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+export HISTCONTROL=ignoredups:erasedups
+export HISTTIMEFORMAT='%F %T '
+export HISTSIZE=5000
+export HISTFILESIZE=5000
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -15,8 +23,6 @@ function ignore { $1 $2 &>/dev/null & }
 
 export EDITOR=vim
 export LESS=-RFX
-export HISTCONTROL=erasedups
-export HISTTIMEFORMAT='%F %T '
 export PS1="\[\e[0;36m\]\u\[\e[0m\] on \[\e[0;34m\]\h\[\e[0m\] in \[\e[0;33m\]\w\[\e[0m\] with \[\e[0;35m\]\j\[\e[0m\] job(s)\n\$(if [[ \$? == 0 ]]; then echo \"\[\e[0;32m\]:)\[\e[0m\]\"; else echo \"\[\e[0;31m\]:(\[\e[0m\]\"; fi) "
 
 complete -cf sudo
