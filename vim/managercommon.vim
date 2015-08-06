@@ -5,6 +5,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 Plug 'haya14busa/incsearch.vim'
 Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
+Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'

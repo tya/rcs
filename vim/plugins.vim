@@ -13,26 +13,6 @@ nnoremap <Leader>tb :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
-" ranger
-function! Ranger()
-  let curpwd = getcwd()
-  exec 'silent lcd %:p:h'
-  if has('nvim')
-    exec 'silent tabe | term ranger'
-  else
-    exec 'silent !ranger'
-  endif
-  redraw!
-  exec 'silent lcd ' . curpwd
-endfunction
-nmap <Leader>ro :call Ranger()<CR>
-
-function! RangerOpen()
-  let filename = @*
-  exec 'edit ' . filename
-endfunction
-nmap <leader>re :call RangerOpen()<CR>
-
 " fzf
 nnoremap <silent> <Leader>fo :FZF!<CR>
 " List of buffers
