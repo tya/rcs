@@ -26,4 +26,5 @@ map g# <Plug>(incsearch-nohl-g#)
 
 " filebeagle
 let g:filebeagle_suppress_keymaps = 1
-map <silent><Leader>fe <Plug>FileBeagleOpenCurrentBufferDir
+map <silent>- <Plug>FileBeagleOpenCurrentBufferDir
+map <silent> <Leader>fe <Plug>FileBeagleOpenCurrentWorkingDir

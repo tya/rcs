@@ -157,10 +157,10 @@ highlight clear SignColumn
 " au VimResized * exe "normal! \<C-w>="
 " set noea
 nnoremap <Leader>= <C-w>=
-nnoremap <C-u> :resize +1<CR>
-nnoremap <C-d> :resize -1<CR>
-nnoremap + :vertical resize +1<CR>
-nnoremap - :vertical resize -1<CR>
+" nnoremap <C-u> :resize +1<CR>
+" nnoremap <C-d> :resize -1<CR>
+" nnoremap + :vertical resize +1<CR>
+" nnoremap - :vertical resize -1<CR>
 
 " remap visual block selection"
 nnoremap <Leader>vb <C-V>
