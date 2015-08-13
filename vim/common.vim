@@ -148,8 +148,8 @@ nnoremap g; g;zz
 nnoremap g, g,zz
 
 " Aesthetics
-set background=dark
-" set background=light
+" set background=dark
+set background=light
 colorscheme solarized
 highlight clear SignColumn
 
@@ -191,7 +191,7 @@ nnoremap <Leader>wm :silent !open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR><CR>
 " set statusline +=%1*\ %n\ %*                          " buffer number
 " set statusline +=%3*\ %<%F%*                          " full path
 " set statusline +=%1*\ %m%*                            " modified flag
-" set statusline +=%1*\ %r%*                            " read only flag"
+" set statusline +=%1*\ %r%*                            " read only flag
 " set statusline +=%2*\ %{&ff}%*                        " file format
 " set statusline +=%2*\ %y%*                            " file type
 " set statusline +=%2*\ %{''.(&fenc!=''?&fenc:&enc).''} " encoding
