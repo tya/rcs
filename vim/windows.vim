@@ -9,6 +9,6 @@ if has('gui_running')
     set guioptions-=R
     set guioptions-=b
     set guioptions-=B
-    set guifont=SourceCodePro-Light:h10:cDEFAULT
+    set guifont=SourceCodePro-Medium:h12:cDEFAULT
 endif
 
