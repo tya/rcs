@@ -6,7 +6,7 @@ export DL=$HOME/downloads
 export SB=$HOME/sandbox
 export RH=$HOME/rcs
 export REP=$HOME/sandbox/repos
-export GOPATH=$PH/go
+export GOPATH=$PH/repos/go
 
 alias work='cd $PH'
 alias dl='cd $DL'
