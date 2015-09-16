@@ -7,9 +7,11 @@ export SB=$HOME/sandbox
 export RH=$HOME/rcs
 export REP=$HOME/sandbox/repos
 export GOPATH=$PH/repos/go
+export DB=$HOME/Dropbox
 
 alias work='cd $PH'
 alias dl='cd $DL'
+alias db='cd $DB'
 alias play='cd $SB'
 alias rcs='cd $RH'
 alias rep='cd $REP'
