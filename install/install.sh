@@ -5,39 +5,39 @@ if [[ "$unamestr" == 'Linux' ]]; then
     platform='linux'
 fi
 
-CFG=~/rcs
+RCS=~/rcs
 rm -rf ~/vim
 mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
 ln -sf ~/vim ~/.nvim
-ln -sf $CFG/vim/vimrc.vim ~/.vimrc
-ln -sf $CFG/vim/vimrc.vim ~/.nvimrc
+ln -sf $RCS/vim/vimrc.vim ~/.vimrc
+ln -sf $RCS/vim/vimrc.vim ~/.nvimrc
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-cp $CFG/vim/vimrc.local ~/vimrc.local
+cp $RCS/vim/vimrc.local ~/vimrc.local
 
-ln -sf $CFG/configs/bashrc ~/.bashrc
-ln -sf $CFG/configs/bash_profile ~/.bash_profile
-cp $CFG/configs/bashrc.local ~/bashrc.local
+ln -sf $RCS/configs/bashrc ~/.bashrc
+ln -sf $RCS/configs/bash_profile ~/.bash_profile
+cp $RCS/configs/bashrc.local ~/bashrc.local
 
-ln -sf $CFG/configs/vimperatorrc ~/.vimperatorrc
-ln -sf $CFG/configs/pentadactylrc ~/.pentadactylrc
-cp $CFG/configs/vimperatorrc.local ~/vimperatorrc.local
+ln -sf $RCS/configs/vimperatorrc ~/.vimperatorrc
+ln -sf $RCS/configs/pentadactylrc ~/.pentadactylrc
+cp $RCS/configs/vimperatorrc.local ~/vimperatorrc.local
 
-ln -sf $CFG/configs/gitconfig ~/.gitconfig
-cp $CFG/configs/gitconfig.local ~/gitconfig.local
-ln -sf $CFG/configs/agignore ~/.agignore
+ln -sf $RCS/configs/gitconfig ~/.gitconfig
+cp $RCS/configs/gitconfig.local ~/gitconfig.local
+ln -sf $RCS/configs/agignore ~/.agignore
 
 rm -rf ~/.fonts
-ln -sf $CFG/fonts ~/.fonts
+ln -sf $RCS/fonts ~/.fonts
 
-ln -sf $CFG/configs/Xresources ~/.Xresources
+ln -sf $RCS/configs/Xresources ~/.Xresources
 
-ln -sf $CFG/configs/tmux.conf ~/.tmux.conf
+ln -sf $RCS/configs/tmux.conf ~/.tmux.conf
 
-ln -sf $CFG/configs/ctags ~/.ctags
+ln -sf $RCS/configs/ctags ~/.ctags
 
 # if [[ $platform == 'linux' ]]; then
-ln -sf $CFG/configs/slate ~/.slate
+ln -sf $RCS/configs/slate ~/.slate
 
 mkdir -p ~/projects/notes
 mkdir -p ~/sandbox/repos
