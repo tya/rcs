@@ -1,5 +1,5 @@
 "vim-go
-let g:go_fmt_fail_silently = 1
+let g:go_fmt_command = "goimports"
 
 " ctlrsf
 nnoremap <Leader>st :CtrlSFToggle<CR>
