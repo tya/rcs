@@ -299,6 +299,7 @@ map <Leader>us :sign unplace *<CR>
 if has('nvim')
     nmap <BS> <C-W>h
     tnoremap <Esc> <C-\><C-n>
+    :au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 endif
 
 " Yank full path of current buffer
