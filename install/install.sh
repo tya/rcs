@@ -9,9 +9,9 @@ RCS=~/rcs
 rm -rf ~/vim
 mkdir -p ~/vim
 ln -sf ~/vim ~/.vim
-ln -sf ~/vim ~/.nvim
+ln -sf ~/vim ~/.config/nvim
 ln -sf $RCS/vim/vimrc.vim ~/.vimrc
-ln -sf $RCS/vim/vimrc.vim ~/.nvimrc
+ln -sf $RCS/vim/vimrc.vim ~/.config/nvim/init.vim
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp $RCS/vim/vimrc.local ~/vimrc.local
 
