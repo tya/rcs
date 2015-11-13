@@ -48,6 +48,8 @@ slate
 alfred
 cVim chrome
 brew install coreutils iterm2
+karabiner
+keycastr
 
 # linux vim copy and paste
 need xsel for nvim clipboard support
@@ -61,6 +63,5 @@ or
 shell -d echo -n %d/%f | xsel -i
 
 # window
-AutoHotkey
 VueScan
 vimfiles

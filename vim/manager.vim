@@ -7,8 +7,8 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'dyng/ctrlsf.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'gabesoft/vim-ags'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'kana/vim-operator-user'
 Plug 'kopischke/vim-fetch'

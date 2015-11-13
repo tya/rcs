@@ -1,12 +1,9 @@
 "vim-go
 let g:go_fmt_command = "goimports"
 
-" ctlrsf
-nnoremap <Leader>st :CtrlSFToggle<CR>
-nmap <Leader>sf <Plug>CtrlSFPrompt
-vmap <Leader>sv <Plug>CtrlSFVwordExec
-nmap <Leader>sw <Plug>CtrlSFCwordExec
-nmap <Leader>sn <Plug>CtrlSFPwordExec
+" vim-ags
+nnoremap <Leader>so :AgsLast<CR>
+nnoremap <Leader>sf :Ags<Space>
 
 " tagbar
 nnoremap <Leader>tb :TagbarToggle<CR>
