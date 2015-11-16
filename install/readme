@@ -46,10 +46,7 @@ rvm system
 brew install vim --with-features=huge --with-cscope --with-lua --with-python --with-perl --with-ruby
 slate
 alfred
-cVim chrome
 brew install coreutils iterm2
-karabiner
-keycastr
 
 # linux vim copy and paste
 need xsel for nvim clipboard support
