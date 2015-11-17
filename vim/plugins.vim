@@ -4,6 +4,7 @@ let g:go_fmt_command = "goimports"
 " vim-ags
 nnoremap <Leader>so :AgsLast<CR>
 nnoremap <Leader>sf :Ags<Space>
+nnoremap <Leader>sc :AgsQuit<CR>
 
 " tagbar
 nnoremap <Leader>tb :TagbarToggle<CR>
