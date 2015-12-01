@@ -1,3 +1,6 @@
+" dirvish
+nnoremap <Leader>do :Dirvish<CR>
+
 " fugitive
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
@@ -24,11 +27,6 @@ map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
-" filebeagle
-let g:filebeagle_suppress_keymaps = 1
-map <silent>- <Plug>FileBeagleOpenCurrentBufferDir
-map <silent> <Leader>fe <Plug>FileBeagleOpenCurrentWorkingDir
-
 " quickscope
 let g:qs_enable = 0
 let g:qs_enable_char_list = [ 'f', 'F', 't', 'T' ]
@@ -48,5 +46,5 @@ function! Quick_scope_selective(movement)
 endfunction
 
 for i in g:qs_enable_char_list
-	execute 'noremap <expr> <silent>' . i . " Quick_scope_selective('". i . "')"
+    execute 'noremap <expr> <silent>' . i . " Quick_scope_selective('". i . "')"
 endfor
