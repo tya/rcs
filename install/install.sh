@@ -8,6 +8,7 @@ fi
 RCS=~/rcs
 rm -rf ~/vim
 mkdir -p ~/vim
+mkdir -p ~/.configs
 ln -sf ~/vim ~/.vim
 ln -sf ~/vim ~/.config/nvim
 ln -sf $RCS/vim/vimrc.vim ~/.vimrc
@@ -38,6 +39,8 @@ ln -sf $RCS/configs/ctags ~/.ctags
 
 # if [[ $platform == 'linux' ]]; then
 ln -sf $RCS/configs/slate ~/.slate
+
+ln -sf $RCS/configs/rc.conf ~/.config/ranger/rc.conf
 
 mkdir -p ~/projects/notes
 mkdir -p ~/sandbox/repos

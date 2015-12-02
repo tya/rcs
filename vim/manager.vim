@@ -10,6 +10,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'gabesoft/vim-ags'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+" Plug 'francoiscabrol/ranger.vim'
+Plug 'dangerzone/ranger.vim'
 Plug 'kana/vim-operator-user'
 Plug 'kopischke/vim-fetch'
 Plug 'lervag/vimtex', { 'for': 'tex' }

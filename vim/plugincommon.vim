@@ -1,6 +1,3 @@
-" dirvish
-nnoremap <Leader>do :Dirvish<CR>
-
 " fugitive
 autocmd BufReadPost fugitive://* set bufhidden=delete
 

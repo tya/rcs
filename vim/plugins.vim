@@ -1,3 +1,6 @@
+" ranger
+map <Leader>ro :call OpenRanger()<CR>
+
 "vim-go
 let g:go_fmt_command = "goimports"
 
