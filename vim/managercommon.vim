@@ -2,6 +2,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'ajh17/VimCompletesMe'
 Plug 'altercation/vim-colors-solarized'
+Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'haya14busa/incsearch.vim'
 Plug 'junegunn/vim-easy-align', { 'on': 'EasyAlign' }
