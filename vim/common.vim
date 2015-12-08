@@ -90,7 +90,7 @@ set pastetoggle=<Leader>pt
 set mouse=a
 
 " handle long lines correctly
-set nowrap
+" set nowrap
 set textwidth=79
 
 " autocomment
